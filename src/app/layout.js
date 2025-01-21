@@ -1,10 +1,15 @@
-import { Geist, Geist_Mono, tan_pearl } from "next/font/google";
+import { Geist, Geist_Mono, tan_pearl, Poppins } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ['300']
+})
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -20,7 +25,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#f5ebe0]`}
+        className={`${poppins.className} antialiased bg-[#fff]`}
       >
         {children}
       </body>
