@@ -13,18 +13,24 @@ export default function Header() {
     const [color, setColor] = useState(false)
 
     const changeColor = () => {
-        if (window.scrollY > 800) {
+        if (typeof window !== 'undefined' && window.scrollY > 800) {
             setColor(true)
-        } else {    
+        } else {
             setColor(false)
         }
     }
 
     useEffect(() => {
-        window.addEventListener('scroll', changeColor)
+        if (typeof window !== 'undefined') {
+            window.addEventListener('scroll', changeColor)
+        }
 
+        return () => {
+            if (typeof window !== 'undefined') {
+                window.removeEventListener('scroll', changeColor)
+            }
+        }
     }, [])
-
 
 
     return (
