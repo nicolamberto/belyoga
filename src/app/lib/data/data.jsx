@@ -28,15 +28,15 @@ import banner3hero from '@/app/lib/bannerbel1.png'
 
 export const carouselHeroSection = [
     {
-        name: 'alt',
+        name: 'alt1',
         img: banner1hero
     },
     {
-        name: 'alt',
+        name: 'alt2',
         img: banner2hero
     },
     {
-        name: 'alt',
+        name: 'alt3',
         img: banner3hero
     },
 ]

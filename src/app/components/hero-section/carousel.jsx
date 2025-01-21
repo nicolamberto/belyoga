@@ -23,7 +23,7 @@ export function EmblaCarousel() {
             <div className="embla__container ">
 
                 {carouselHeroSection.map(item => (
-                    <div className="embla__slide flex items-center justify-center overflow-hidden">
+                    <div key={item.name} className="embla__slide flex items-center justify-center overflow-hidden">
                         <Image
                             src={item.img}
                             quality={true}

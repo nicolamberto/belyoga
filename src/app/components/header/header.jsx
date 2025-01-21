@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import logo from '@/app/lib/logosoloclaro.png'
 import Image from 'next/image'
 import { navbar } from '@/app/lib/data/data'
@@ -13,15 +13,18 @@ export default function Header() {
     const [color, setColor] = useState(false)
 
     const changeColor = () => {
-        if(window.scrollY > 800){
+        if (window.scrollY > 800) {
             setColor(true)
-        } else {
+        } else {    
             setColor(false)
         }
     }
 
-    window.addEventListener('scroll', changeColor)
-    
+    useEffect(() => {
+        window.addEventListener('scroll', changeColor)
+
+    }, [])
+
 
 
     return (

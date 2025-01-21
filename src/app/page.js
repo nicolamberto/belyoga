@@ -16,6 +16,7 @@ export default function Home() {
           <Image
           src={fondo}
           className="absolute opacity-30"
+          alt="img"
           width={3000}
           /> 
           <About />

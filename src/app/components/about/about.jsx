@@ -51,6 +51,7 @@ export default function About() {
                 <Image
                   src={item.icon}
                   width={60}
+                  alt='img'
                   className='text-[#033908] absolute -top-7'
                 />
                 <p className='w-[80%] text-center'>la mejor yoga pa asegurada</p>
