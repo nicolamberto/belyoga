@@ -90,3 +90,29 @@ export const aboutSquares = [
         text: 'yoga equilibrio balance'
     },
 ]
+
+
+
+export const clases = [
+    {
+        nombre: 'YOGA Y NATURALEZA: RECONEXION EN ESCENARIOS AUTENTICOS',
+        descripcion: 'Sesiones de yoga al aire libre en lugares emblemáticos de Córdoba como el Valle de Calamuchita, las Sierras Chicas o el Parque Nacional Quebrada del Condorito',
+        img:'',
+        descripcion2:'lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cum quam sit ratione placeat temporibus quidem unde, exercitationem quod debitis.lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cum quam sit ratione placeat temporibus quidem unde, exercitationem quod debitis.lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cum quam sit ratione placeat temporibus quidem unde, exercitationem quod debitis.',
+        id:1
+    },
+    {
+        nombre: 'CEREMONIAS DE CACAO: TRADICION Y SANACION EN CORDOBA',
+        descripcion: 'Ceremonias inspiradas en la cosmovisión indígena que integran el cacao ceremonial con música, danza y conexión grupal. Se utilizará cacao orgánico producido de manera ética, complementado con hierbas locales como peperina y palo santo',
+        img:'',
+        descripcion2:'lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cum quam sit ratione placeat temporibus quidem unde, exercitationem quod debitis.lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cum quam sit ratione placeat temporibus quidem unde, exercitationem quod debitis.lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cum quam sit ratione placeat temporibus quidem unde, exercitationem quod debitis.',
+        id:2
+    },
+    {
+        nombre: 'EXPERIENCIAS SENSORIALES DE BIENESTAR',
+        descripcion: 'Circuitos holísticos que combinan actividades como yoga, mindfulness y tratamientos de spa con productos locales.',
+        img:'',
+        descripcion2:'lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cum quam sit ratione placeat temporibus quidem unde, exercitationem quod debitis.lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cum quam sit ratione placeat temporibus quidem unde, exercitationem quod debitis.lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cum quam sit ratione placeat temporibus quidem unde, exercitationem quod debitis.',
+        id:3
+    }
+]
