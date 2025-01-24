@@ -5,26 +5,30 @@ import About from "./components/about/about";
 import fondo from '@/app/lib/fondo.jpg'
 import Divider from "./components/divider/divider";
 import Clases from "./components/clases/clases/clases";
+import ReviewList from "./components/reviews/reviews/reviewlist";
 
 
 export default function Home() {
   return (
-    <div className="border-2 border-white h-[2000vh] relative">
+    <div className="border-2 border-white h-[2000vh] relative ">
       <main className="flex justify-center items-center flex-col gap-5">
         <div>
           <Header />
           <HeroSection />
-          <Image
-          src={fondo}
-          className="absolute opacity-30"
-          alt="img"
-          width={3000}
-          /> 
-          <About />
-          <Divider/>
-          <Clases/>
-        </div>
+          <div className="relative z-5">
+            <Image
+              src={fondo}
+              className="absolute opacity-30 z-0"
+              alt="img"
+              fill={true}
+            />
+            <About />
+            <Divider />
+            <Clases />
 
+          </div>
+          <ReviewList />
+        </div>
       </main>
     </div>
   );

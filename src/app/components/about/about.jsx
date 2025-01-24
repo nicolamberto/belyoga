@@ -16,7 +16,7 @@ export default function About() {
 
 
       {/* <p className='text-5xl text-gray-800'>SOBRE MI</p> */}
-      <div className='flex flex-row justify-center items-center rounded-br-[120px] pr-4 bg-opacity-25  w-[1320px] py-56'>
+      <div className='flex flex-row justify-center items-center rounded-br-[120px] z-30 pr-4 bg-opacity-25  w-[1320px] py-56'>
 
         <div className=' w-[100%] z-30 overflow-visible'>
           <Image

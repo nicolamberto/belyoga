@@ -18,7 +18,7 @@ export default function Clases() {
   return (
     <div className="w-[100%] flex justify-center items-center">
 
-      <div className=' z-50 flex flex-col justify-center items-center w-[60%] py-[200px]'>
+      <div className=' z-10 flex flex-col justify-center items-center w-[60%] py-[200px]'>
 
         <IntroClases />
 

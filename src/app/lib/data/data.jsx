@@ -116,3 +116,43 @@ export const clases = [
         id:3
     }
 ]
+
+
+export const reviews = [ 
+    {
+        name: 'NICOLAS LAMBERTO',
+        review: 'Belen es una profe muy copada. Sus clases son dinámicas, profundas y te ayudan a conectar con el Aquí y Ahora. Siempre propone cosas nuevas y promueve la amistad y el compañerismo. Yo estoy feliz de haberla encontrado y del grupo hermoso que se armó 🥰🥰🥰'
+    },
+    {
+        name: 'NICOLAS LAMBERTO',
+        review: 'Belen es una profe muy copada. Sus clases son dinámicas, profundas y te ayudan a conectar con el Aquí y Ahora. Siempre propone cosas nuevas y promueve la amistad y el compañerismo. Yo estoy feliz de haberla encontrado y del grupo hermoso que se armó 🥰🥰🥰'
+    },
+    {
+        name: 'NICOLAS LAMBERTO',
+        review: 'Belen es una profe muy copada. Sus clases son dinámicas, profundas y te ayudan a conectar con el Aquí y Ahora. Siempre propone cosas nuevas y promueve la amistad y el compañerismo. Yo estoy feliz de haberla encontrado y del grupo hermoso que se armó 🥰🥰🥰'
+    },
+    {
+        name: 'NICOLAS LAMBERTO',
+        review: 'Belen es una profe muy copada. Sus clases son dinámicas, profundas y te ayudan a conectar con el Aquí y Ahora. Siempre propone cosas nuevas y promueve la amistad y el compañerismo. Yo estoy feliz de haberla encontrado y del grupo hermoso que se armó 🥰🥰🥰'
+    },
+    {
+        name: 'NICOLAS LAMBERTO',
+        review: 'Belen es una profe muy copada. Sus clases son dinámicas, profundas y te ayudan a conectar con el Aquí y Ahora. Siempre propone cosas nuevas y promueve la amistad y el compañerismo. Yo estoy feliz de haberla encontrado y del grupo hermoso que se armó 🥰🥰🥰'
+    },
+    {
+        name: 'NICOLAS LAMBERTO',
+        review: 'Belen es una profe muy copada. Sus clases son dinámicas, profundas y te ayudan a conectar con el Aquí y Ahora. Siempre propone cosas nuevas y promueve la amistad y el compañerismo. Yo estoy feliz de haberla encontrado y del grupo hermoso que se armó 🥰🥰🥰'
+    },
+    {
+        name: 'NICOLAS LAMBERTO',
+        review: 'Belen es una profe muy copada. Sus clases son dinámicas, profundas y te ayudan a conectar con el Aquí y Ahora. Siempre propone cosas nuevas y promueve la amistad y el compañerismo. Yo estoy feliz de haberla encontrado y del grupo hermoso que se armó 🥰🥰🥰'
+    },
+    {
+        name: 'NICOLAS LAMBERTO',
+        review: 'Belen es una profe muy copada. Sus clases son dinámicas, profundas y te ayudan a conectar con el Aquí y Ahora. Siempre propone cosas nuevas y promueve la amistad y el compañerismo. Yo estoy feliz de haberla encontrado y del grupo hermoso que se armó 🥰🥰🥰'
+    },
+    {
+        name: 'NICOLAS LAMBERTO',
+        review: 'Belen es una profe muy copada. Sus clases son dinámicas, profundas y te ayudan a conectar con el Aquí y Ahora. Siempre propone cosas nuevas y promueve la amistad y el compañerismo. Yo estoy feliz de haberla encontrado y del grupo hermoso que se armó 🥰🥰🥰'
+    },
+ ]
