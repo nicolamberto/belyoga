@@ -33,9 +33,9 @@ export default function Review() {
             >
 
                 {reviews.map((item, index) => (
-                    <SwiperSlide className=''>
+                    <SwiperSlide key={index} className=''>
 
-                        <div key={index} className='flex flex-col justify-center items-start w-[70%] p-5 gap-4 bg-white bg-opacity-80 rounded-lg '>
+                        <div  className='flex flex-col justify-center items-start w-[70%] p-5 gap-4 bg-white bg-opacity-80 rounded-lg '>
                             <div className=" text-3xl">
                                 <IoMdQuote />
                             </div>
