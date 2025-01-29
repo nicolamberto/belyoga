@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono, tan_pearl, Poppins } from "next/font/google";
 import "./globals.css";
+import Header from "./components/header/header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${poppins.className} antialiased bg-[#fff]`}
       >
+        <Header />
         {children}
       </body>
     </html>

@@ -14,12 +14,12 @@ export default function Review() {
     return (
 
 
-        <div className='max-w-[1000px] h-[100vh] py-10'>
+        <div className='max-w-[1400px]  py-10'>
             <Swiper
                 // install Swiper modules
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
                 spaceBetween={0}
-                slidesPerView={3}
+                slidesPerView={4}
                 navigation
                 pagination={{ clickable: true }}
                 
@@ -31,7 +31,7 @@ export default function Review() {
                 {reviews.map((item, index) => (
                     <SwiperSlide key={index} className=''>
 
-                        <div  className='flex flex-col justify-center items-start w-[70%] p-5 gap-4 bg-white bg-opacity-80 rounded-lg '>
+                        <div  className='flex flex-col justify-center items-start w-[70%] p-5 bg-white bg-opacity-80 rounded-lg '>
                             <div className=" text-3xl">
                                 <IoMdQuote />
                             </div>

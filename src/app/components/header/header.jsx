@@ -5,12 +5,15 @@ import logo from '@/app/lib/logosoloclaro.png'
 import Image from 'next/image'
 import { navbar } from '@/app/lib/data/data'
 import Link from 'next/link'
-
+import { useRouter } from 'next/router'
 
 
 export default function Header() {
 
-    const [color, setColor] = useState(false)
+    const [color, setColor] = useState(true)
+
+
+
 
     const changeColor = () => {
         if (typeof window !== 'undefined' && window.scrollY > 800) {
@@ -34,7 +37,7 @@ export default function Header() {
 
 
     return (
-        <div className={color ? 'w-full flex justify-center items-center fixed top-0 z-50 bg-[#79956c] transition bg-opacity-90 duration-300' : 'w-full flex justify-center items-center fixed top-0 z-50 transition duration-300'}>
+        <div className={/* color ? */ 'w-full flex justify-center items-center fixed top-0 z-50 bg-[#79956c] transition bg-opacity-90 duration-300' /* : 'w-full flex justify-center items-center fixed top-0 z-50 transition duration-300' */}>
             <div className=' w-[90%] h-20 flex items-center justify-between'>
                 <Image
                     src={logo}

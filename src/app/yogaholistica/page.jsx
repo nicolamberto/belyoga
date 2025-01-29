@@ -1,9 +1,9 @@
 "use client"
 
 import React, { useState } from 'react'
-import Card from '../card'
-import { yogaholisticasub } from '@/app/lib/data/data'
-import IntroClases from '../introclases'
+import Card from '../components/clases/card'
+import { yogaholisticasub, yogaholistica } from '@/app/lib/data/data'
+import IntroClases from '../components/clases/introclases'
 
 
 export default function Clases() {
@@ -16,11 +16,20 @@ export default function Clases() {
 
 
   return (
-    <div className="w-[100%] flex justify-center items-center">
+    <div className="w-[100%] flex justify-center items-center bg-[#f5ebe0] bg-opacity-60">
 
-      <div className=' z-10 flex flex-col justify-center items-center w-[60%] py-[200px]'>
+      <div className=' z-10 flex flex-col justify-center items-center w-[60%] py-20'>
+        {yogaholistica.map(item => (
+          <IntroClases 
+          key={item.title} 
+          title={item.title}
+          subtitle={item.subtitle}
+          text1={item.text1}
+          text2={item.text2}
+          img={item.img}
+          />
+        ))}
 
-        <IntroClases />
 
 
         {/* <p className=' text-4xl text-gray-800'>NUESTRAS CLASES</p> */}
