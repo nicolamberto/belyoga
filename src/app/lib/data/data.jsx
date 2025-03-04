@@ -5,6 +5,10 @@ export const navbar = [
         link: '/'
     },
     {
+        title: 'SOBRE MI',
+        link: '/sobremi'
+    },
+    {
         title: 'YOGA CONVENCIONAL',
         link: '/yogaconvencional'
     },
@@ -169,11 +173,11 @@ export const yogaholisticasub = [
 export const reviews = [
     {
         name: 'NANCY ROMERO',
-        review: 'En el 2024 decidí tomar clases de Yoga , no conocía nada de esta actividad y la profe Belén fue la que me adentro en este nuevo mundo de Yoga , actividad que realice durante todo el año que ha dado salud, tranquilidad , mejora y mayor flexibilidad a mis movimientos , también aprender a relajarme y disfrutar de cada meditación . Súper recomendable la actividad y la profe en particular .deseo realizar de por vida está práctica .'
+        review: 'En el 2024 decidí tomar clases de Yoga , no conocía nada de esta actividad y la profe Belén fue la que me adentro en este nuevo mundo de Yoga , actividad que realice durante todo el año que ha dado salud, tranquilidad , mejora y mayor flexibilidad a mis movimientos.'
     },
     {
         name: 'PATRICIA SERRA',
-        review: 'Mis clases de yoga con la profe Bel. Comencé a probar con esta práctica ya que no estaba muy convencida . Pero lleno todas mis expectativas.  Bel me enseñó a respirar a bajar la ansiedad y el estrés mi calidad de sueño es mucho mejor y tranquilidad en mi trabajo. Mejor en mi postura. Columna y flexibilidad. Destacó también el grupo excelentes compañeros ya que compartimos momentos increíbles. Gracias por tu confianza y sin tus enseñanzas  no habría podido llegar a un equilibrio en mi cuerpo y mi mente. Gracias gracias querida profe BEL.🥰'
+        review: 'Mis clases de yoga con la profe Bel. Comencé a probar con esta práctica ya que no estaba muy convencida . Pero lleno todas mis expectativas.  Bel me enseñó a respirar a bajar la ansiedad y el estrés mi calidad de sueño es mucho mejor y tranquilidad en mi trabajo. '
     },
     {
         name: 'ROMINA GARCIA',
@@ -189,36 +193,119 @@ export const reviews = [
     },
     {
         name: 'ANA DUARTE',
-        review: 'Mis clases de yoga con la profe Belén son un espacio y tiempo que me regal, diría que es de encuentro, encuentro conmigo misma con partes de mi cuerpo que con otras actividades no he sido consiente que están ahí, conmigo. Despertando . Encuentros con mi mente, mis pensamientos, emociones cómo alimentos que me nutren, se encuentra todo mi ser de manera más consiente, y a su vez es un encuentro con el ser de mis compañeras, donde compartimos  experiencia. Todo esto que pasa lo habilita Belén con su sabiduría sobre el yoga posturas , respiracion, asanas, movimientos y quietud, a través de lo que comunica y "cómo"   a través de su voz ( ritmo, tono, timbre)  habilita confianza, seguridad para guiarnos y acompañarnos.'
+        review: 'Mis clases de yoga con la profe Belén son un espacio y tiempo que me regal, diría que es de encuentro, encuentro conmigo misma con partes de mi cuerpo que con otras actividades no he sido consiente que están ahí, conmigo. Despertando . '
     },
 ]
 
-import img1 from '@/app/lib/introclases1.jpg'
+import img1 from '@/app/lib/yogaintegral.png'
 import img2 from '@/app/lib/introclases2.jpg'
 import img3 from '@/app/lib/introclases3.jpg'
 
 
-export const introClases = [ 
+export const introClases = [
     {
-        name: 'Yoga Convencional',
-        text1:'Sumérgete en la experiencia transformadora del yoga en un entorno cálido y cercano. En nuestras clases presenciales, disfrutarás de la conexión directa con el instructor y otros practicantes, mientras profundizas en la respiración',
-        text2:'Sumérgete en la experiencia transformadora del yoga en un entorno cálido y cercano. En nuestras clases presenciales',
+        name: 'Hatha Yoga',
+        text1: 'Sumérgete en la experiencia transformadora del yoga en un entorno cálido y cercano. En nuestras clases presenciales, disfrutarás de la conexión directa con el instructor y otros practicantes, mientras profundizas en la respiración',
         id: 1,
         img: img1
     },
     {
-        name: 'Yoga Holistica',
-        text1:'Sumérgete en la experiencia transformadora del yoga en un entorno cálido y cercano. En nuestras clases presenciales, disfrutarás de la conexión directa con el instructor y otros practicantes, mientras profundizas en la respiración',
-        text2:'Sumérgete en la experiencia transformadora del yoga en un entorno cálido y cercano. En nuestras clases presenciales',
+        name: 'Yoga Integral',
+        text1: 'Sumérgete en la experiencia transformadora del yoga en un entorno cálido y cercano. En nuestras clases presenciales, disfrutarás de la conexión directa con el instructor y otros practicantes, mientras profundizas en la respiración',
         id: 2,
-        img: img2
+        img: img1
 
     },
     {
-        name: 'Yoga Empresarial',
-        text1:'Sumérgete en la experiencia transformadora del yoga en un entorno cálido y cercano. En nuestras clases presenciales, disfrutarás de la conexión directa con el instructor y otros practicantes, mientras profundizas en la respiración',
-        text2:'Sumérgete en la experiencia transformadora del yoga en un entorno cálido y cercano. En nuestras clases presenciales',
+        name: 'Yoga Terapia',
+        text1: 'Sumérgete en la experiencia transformadora del yoga en un entorno cálido y cercano. En nuestras clases presenciales, disfrutarás de la conexión directa con el instructor y otros practicantes, mientras profundizas en la respiración',
         id: 3,
-        img: img3
+        img: img1
+    },
+]
+
+export const introPropuestas = [
+    {
+        name: 'Yoga Empresarial',
+        text1: 'Sumérgete en la experiencia transformadora del yoga en un entorno cálido y cercano. En nuestras clases presenciales, disfrutarás de la conexión directa con el instructor y otros practicantes, mientras profundizas en la respiración',
+        id: 1,
+    }, {
+        name: 'Experiencias Holísticas',
+        text1: 'Sumérgete en la experiencia transformadora del yoga en un entorno cálido y cercano. En nuestras clases presenciales, disfrutarás de la conexión directa con el instructor y otros practicantes, mientras profundizas en la respiración',
+        id: 2,
+    },
+
+]
+
+
+import carouselimgs1 from '@/app/lib/carouselimgs1.jpeg'
+import carouselimgs2 from '@/app/lib/carouselimgs2.jpeg'
+import carouselimgs3 from '@/app/lib/carouselimgs3.jpeg'
+import carouselimgs4 from '@/app/lib/carouselimgs4.jpeg'
+import carouselimgs5 from '@/app/lib/carouselimgs5.jpeg'
+import carouselimgs6 from '@/app/lib/carouselimgs6.jpeg'
+import carouselimgs7 from '@/app/lib/carouselimgs7.jpeg'
+
+
+export const carouselImgs = [
+    {
+        img: carouselimgs1,
+        alt: 'alt1'
+    },
+    {
+        img: carouselimgs2,
+        alt: 'alt2'
+    },
+    {
+        img: carouselimgs3,
+        alt: 'alt3'
+    },
+    {
+        img: carouselimgs5,
+        alt: 'alt5'
+    },
+    {
+        img: carouselimgs6,
+        alt: 'alt6'
+    },
+    {
+        img: carouselimgs6,
+        alt: 'alt7'
+    },
+    {
+        img: carouselimgs6,
+        alt: 'alt8'
+    },
+]
+
+
+export const yogaConvencional = [
+    {
+        name: 'HATHA YOGA',
+        text1: 'El Hatha Yoga es la puerta de entrada perfecta para quienes buscan un equilibrio entre cuerpo y mente. A través de posturas (asanas) y técnicas de respiración (pranayama), esta práctica te ayuda a conectar con tu bienestar de manera consciente y progresiva.',
+        text2: 'Su ritmo pausado y accesible lo convierte en una opción ideal para principiantes y personas que desean profundizar en la alineación, la fuerza y la flexibilidad sin prisas ni exigencias extremas.',
+        text3: 'Además de los beneficios físicos, el Hatha Yoga promueve la relajación mental y el alivio del estrés. Sus sesiones permiten reducir la ansiedad y mejorar la concentración en la vida diaria.',
+        text4: 'Si buscas una práctica que te ayude a sentirte mejor en cuerpo y mente, Hatha Yoga es el camino perfecto. Descubre sus beneficios y empieza a transformar tu bienestar hoy mismo.',
+        id: 1,
+
+    },
+    {
+        name: 'YOGA INTEGRAL',
+        text1: 'El Yoga Integral es una experiencia completa que armoniza cuerpo, mente y espíritu. No se limita solo a las posturas físicas, sino que integra meditación, respiración y relajación profunda.',
+        text2: 'A través de una combinación equilibrada de asanas, pranayama y técnicas de mindfulness, esta práctica te permite explorar un bienestar holístico. Es ideal para quienes buscan una conexión más profunda con ellos mismos y con el presente.',
+        text3: 'El Yoga Integral se adapta a todos los niveles y edades, ofreciendo una práctica versátil y enriquecedora. Ya sea que necesites reducir el estrés, mejorar la flexibilidad o fortalecer tu energía vital, aquí encontrarás un espacio para crecer.',
+        text4: 'Sumérgete en esta práctica transformadora y siente cómo tu cuerpo se fortalece, tu mente se aquieta y tu espíritu se expande. Vive el yoga en su esencia más completa y natural.',
+        id: 2,
+
+
+    },
+    {
+        name: 'YOGA TERAPIA',
+        text1: 'La Yoga Terapia es una práctica diseñada para sanar el cuerpo y la mente a través del movimiento consciente, la respiración y la relajación. Su enfoque personalizado la hace ideal para quienes buscan aliviar dolores o mejorar su bienestar.',
+        text2: 'Cada sesión se adapta a las necesidades individuales, abordando problemas específicos como estrés, ansiedad, dolores musculares o condiciones crónicas. Con técnicas suaves y efectivas, ayuda a recuperar movilidad y equilibrio interno.',
+        text3: 'A diferencia del yoga convencional, la Yoga Terapia pone énfasis en la recuperación y la prevención. Es una herramienta poderosa para mejorar la postura, reducir la tensión y promover una vida más saludable y plena.',
+        text4: 'Si necesitas un enfoque amoroso y restaurativo para cuidar tu cuerpo y tu mente, la Yoga Terapia es para ti. Conéctate con tu bienestar y experimenta sus efectos sanadores desde la primera clase.',
+        id: 3,
+
     },
 ]

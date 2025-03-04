@@ -13,14 +13,9 @@ import { socialMediaHero } from '@/app/lib/data/data';
 
 export default function HeroSection() {
     return (
-        <div className='w-full h-[100%] flex justify-center items-center bg-[#f5ebe0] '>
-            <div className='flex relative justify-center items-center  h-[100vh]  overflow-hidden'>
+        <div className='w-full flex justify-center items-center'>
+            <div className='flex justify-center items-center overflow-hidden'>
                 <EmblaCarousel />
-                <div className='absolute flex gap-4 text-xl text-[#fff] bottom-[5%] right-[5%]'>
-                    {socialMediaHero.map(item => (
-                        <button>{item.icon}</button>
-                    ))}
-                </div>
             </div>
 
 

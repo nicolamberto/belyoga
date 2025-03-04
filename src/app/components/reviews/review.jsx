@@ -4,49 +4,52 @@ import React from 'react'
 import { IoMdQuote } from "react-icons/io";
 import { reviews } from "@/app/lib/data/data";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, Scrollbar, A11y } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 
 export default function Review() {
     return (
 
 
-        <div className='max-w-[1400px]  py-10'>
+        <div className='max-w-[1400px]'>
             <Swiper
                 // install Swiper modules
-                modules={[Navigation, Pagination, Scrollbar, A11y]}
+                modules={[Navigation, Scrollbar, A11y]}
                 spaceBetween={0}
                 slidesPerView={4}
                 navigation
                 pagination={{ clickable: true }}
-                
+                loop={true}
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
-                className='h-[100vh] w-[90%]'
+                className='w-[90%]  flex justify-center items-center'
             >
-
-                {reviews.map((item, index) => (
-                    <SwiperSlide key={index} className=''>
-
-                        <div  className='flex flex-col justify-center items-start w-[70%] p-5 bg-white bg-opacity-80 rounded-lg '>
-                            <div className=" text-3xl">
-                                <IoMdQuote />
+                
+                    {reviews.map((item, index) => (
+                        <SwiperSlide key={index} className=''>
+                            <div className=" w-full h-full flex justify-center items-center">
+                                <div className='flex flex-col justify-center items-start w-[70%] p-5 border-2 border-[#033908] rounded-[50px]'>
+                                <div className=" text-xl pb-2 text-green-800">
+                                    <IoMdQuote />
+                                </div>
+                                <p className='text-[13px] text-gray-700'>
+                                    {item.review}
+                                </p>
+                                <p className='text-md text-gray-800 font-semibold pt-2'>
+                                    {item.name}
+                                </p>
                             </div>
-                            <p className='text-sm text-gray-700'>
-                                {item.review}
-                            </p>
-                            <p className='text-md text-gray-800 font-semibold'>
-                                {item.name}
-                            </p>
-                        </div>
+                            </div>
+                            
 
-                    </SwiperSlide>
+                        </SwiperSlide>
 
 
-                ))}
+                    ))}
+                
+
 
             </Swiper>
         </div>

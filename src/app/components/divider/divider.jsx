@@ -4,7 +4,7 @@ export default function Divider() {
     return (
 
         <div className="w-full flex justify-center items-center">
-            <div className='w-[97%] grid grid-cols-7 justify-items-center bg-[#79956c]'>
+            <div className='w-[100%] grid grid-cols-7 justify-items-center bg-[#79956c] text-xs px-20'>
 
                 <div className='flex flex-col justify-center items-center py-5'>
                     <div className='flex flex-col justify-center items-center text-[#f5ebe0]'>
@@ -17,8 +17,8 @@ export default function Divider() {
 
                 <div className='flex flex-col justify-center items-center py-5'>
                     <div className='flex flex-col justify-center items-center text-[#f5ebe0]'>
-                        <p>+300</p>
-                        <p>Alumnos</p>
+                        <p>+10</p>
+                        <p>Años de experiencia</p>
                     </div>
                 </div>
 
