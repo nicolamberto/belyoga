@@ -52,7 +52,7 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Contact />
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

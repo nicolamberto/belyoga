@@ -309,3 +309,24 @@ export const yogaConvencional = [
 
     },
 ]
+
+
+export const dividerItems = [
+    {
+        text: '+300',
+        text2: 'Alumnos'
+    },
+    {
+        text: '+10',
+        text2: 'Años de experiencia'
+    },
+    {
+        text: '+20',
+        text2: 'Reconocimientos'
+    },
+    {
+        text: '+10',
+        text2: 'Empresas felices'
+    },
+
+]

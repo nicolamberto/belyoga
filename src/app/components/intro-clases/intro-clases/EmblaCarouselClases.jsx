@@ -56,7 +56,7 @@ const EmblaCarouselClases = () => {
             <div className="embla flex justify-center items-center flex-col w-[100%] xl:w-[80%]">
 
                 <div className="flex flex-col items-center justify-center">
-                    <p className='text-[30px] lg:text-[40px] xl:text-[50px] text-[#033908] pb-0'>Nuestras CLASES</p>
+                    <p className='text-[30px] lg:text-[30px] xl:text-[40px] pb-0 sm:pb-5 text-[#033908] font-bold'>Nuestras CLASES</p>
                 </div>
 
                 <div className="embla__viewport " ref={emblaMainRef}>

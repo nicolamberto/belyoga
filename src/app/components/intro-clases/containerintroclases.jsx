@@ -11,10 +11,10 @@ export default function ContainerIntroClases({ name, img }) {
 
             <div className='flex flex-row justify-center items-center h-full w-[100%] sm:w-[80%]'>
 
-                <div className=" flex flex-col justify-center gap-5 items-start w-[80%] sm:w-[50%] text-justify">
+                <div className=" flex flex-col justify-center gap-5 items-center w-[80%] sm:w-[50%] 2xl:w-[80%] text-justify ">
                     <p className='font-semibold text-start text-[20px] lg:text-[25px]'>{name}</p>
 
-                    <div className="flex flex-col gap-5 text-[#033908] text-opacity-80 text-[11px] lg:text-[13px] xl:text-[15px]">
+                    <div className="flex flex-col gap-5 text-[#033908] text-opacity-80 text-[11px] lg:text-[13px] xl:text-[15px] ">
                         <p>Sumérgete en la experiencia transformadora del yoga en un entorno cálido y cercano. En nuestras clases presenciales, disfrutarás de la conexión directa con el instructor y otros practicantes, mientras profundizas en la respiraciónSumérgete en la experiencia transformadora del yoga en un entorno cálido y cercano. </p>
                         <p>Sumérgete en la experiencia transformadora del yoga en un entorno cálido y cercano. En nuestras clases presenciales, disfrutarás de la conexión directa con el instructor y otros practicantes, mientras profundizas en la respiraciónSumérgete en la experiencia transformadora del yoga en un entorno cálido y cercano. </p>
 

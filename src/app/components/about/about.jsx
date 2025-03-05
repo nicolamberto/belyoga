@@ -13,13 +13,13 @@ import Image from 'next/image'
 
 export default function About() {
   return (
-    <div id='about' className=' flex flex-col justify-center items-center'>
+    <div id='about' className=' flex flex-col justify-center items-center pt-32 px-3 xl:px-0'>
 
 
       {/* <p className='text-5xl text-gray-800'>SOBRE MI</p> */}
-      <div className='flex flex-row justify-center items-center rounded-br-[120px] z-30 bg-opacity-25  w-[80%] pt-32'>
+      <div className='flex flex-row justify-center items-center z-30 bg-opacity-25  w-[100%] xl:w-[80%]'>
 
-        <div className=' w-[100%] z-30 overflow-visible flex justify-center items-center'>
+        <div className='hidden sm:flex z-30 overflow-visible justify-center items-center'>
           <Image
             src={sobremi}
             width={500}
@@ -29,14 +29,14 @@ export default function About() {
 
         </div>
 
-        <div className='flex flex-col gap-5'>
-          <p className=' text-[50px] text-gray-800'>Sobre MI</p>
+        <div className='flex flex-col items-center sm:items-start gap-5 w-[100%] md:w-[90%] lg:w-[100%]'>
+          <p className='text-[30px] lg:text-[40px] xl:text-[50px] text-[#033908]'>Sobre MI</p>
 
           <div className=' flex flex-col ml-2'>
 
-            <h2 className='text-xl text-gray-800'>Belén Sánchez</h2>
+            <h2 className='sm:text-[15px] lg:text-[20px] xl:text-[25px] text-[#033908]'>Belén Sánchez</h2>
 
-            <div className='flex flex-col justify-center items-center gap-5 text-[15px] text-[#4a5e42] pt-5'>
+            <div className=' h-[100%] flex flex-col justify-center gap-6 text-[#033908] text-opacity-80 text-justify font-[1px] text-[11px] lg:text-[13px] xl:text-[15px] pt-5'>
 
               <p>Soy Bel Sanchez, y mi viaje en el mundo del yoga comenzó hace más de 20 años, cuando aún trabajaba en un exigente cargo administrativo en una importante empresa. En aquel entonces, mis días iniciaban con la práctica de yoga antes de sumergirme en largas jornadas laborales. Esa práctica me ofrecía claridad, enfoque y energía, convirtiéndose en un refugio de bienestar en medio de la rutina.
               </p>
@@ -47,9 +47,13 @@ export default function About() {
             </div>
           </div>
 
-          <div className=' grid grid-cols-4 justify-items-center gap-5 w-full pt-10'>
+           
+        </div>
+
+      </div>
+      <div className=' grid grid-cols-2 sm:grid-cols-4 justify-items-center gap-20 sm:gap-0 w-[50%] sm:w-[80%] md:w-[70%] lg:w-[85%] xl:w-[60%] py-10 sm:py-20'>
             {aboutSquares.map(item => (
-              <div className='w-56 h-44 bg-[#79956c] bg-opacity-25 transition shadow-md rounded-3xl flex flex-col justify-center items-center gap-0 relative'>
+              <div className='w-32 h-32 sm:w-32 sm:h-32 lg:w-44 lg:h-44 xl:w-44 xl:h-44 bg-[#79956c] bg-opacity-25 transition shadow-md rounded-3xl flex flex-col justify-center items-center gap-0 relative'>
 
                 <Image
                   src={item.icon}
@@ -57,18 +61,14 @@ export default function About() {
                   alt='img'
                   className='text-[#033908] absolute -top-7'
                 />
-                <p className='w-[80%] text-center'>la mejor yoga pa asegurada</p>
+                <p className='w-[80%] text-center text-[7px] sm:text-[9px] md:text-[10px] lg:text-[13px] xl:text-[15px] text-[#033908]'>la mejor yoga pa asegurada</p>
               </div>
             ))}
-          </div>
-        </div>
+          </div> 
 
-      </div>
+      <div className='flex flex-row-reverse justify-center items-center rounded-br-[120px] z-30 bg-opacity-25  w-[100%] xl:w-[80%]'>
 
-
-      <div className='flex flex-row-reverse justify-center items-center rounded-br-[120px] z-30 bg-opacity-25  w-[80%] py-20'>
-
-        <div className=' w-[100%] z-30 overflow-visible flex justify-center items-center'>
+        <div className='hidden lg:flex z-30 overflow-visible justify-center items-center'>
           <Image
             src={trayectoria}
             width={500}
@@ -78,13 +78,12 @@ export default function About() {
 
         </div>
 
-        <div className='flex flex-col gap-5'>
-          <p className=' text-4xl text-gray-800'>TRAYECTORIA</p>
+        <div className='flex flex-col items-center lg:items-start gap-5 w-[100%] md:w-[90%] lg:w-[100%] pb-20'>
+          <p className='text-[30px] lg:text-[40px] xl:text-[50px] text-[#033908]'>TRAYECTORIA</p>
 
           <div className=' flex flex-col ml-2'>
 
-
-            <div className='flex flex-col justify-center items-center gap-7 text-base text-[#4a5e42] pt-5'>
+            <div className='h-[100%] flex flex-col justify-center gap-6 text-[#033908] text-opacity-80 text-justify font-[1px] text-[11px] lg:text-[13px] xl:text-[15px] pt-5'>
 
               <p>A lo largo de los años, he profundizado mi aprendizaje con reconocidos maestros y escuelas internacionales, adquiriendo herramientas valiosas para compartir esta disciplina con otras personas:</p>
               <ul className=' flex flex-col gap-4 list-disc pl-10'>
@@ -107,21 +106,6 @@ export default function About() {
               </p>
 
             </div>
-          </div>
-
-          <div className=' grid grid-cols-4 justify-items-center gap-5 w-full pt-10'>
-            {/* {aboutSquares.map(item => (
-              <div className='w-56 h-44 bg-[#79956c] bg-opacity-25 transition shadow-md rounded-3xl flex flex-col justify-center items-center gap-0 relative'>
-
-                <Image
-                  src={item.icon}
-                  width={60}
-                  alt='img'
-                  className='text-[#033908] absolute -top-7'
-                />
-                <p className='w-[80%] text-center'>la mejor yoga pa asegurada</p>
-              </div>
-            ))} */}
           </div>
         </div>
 

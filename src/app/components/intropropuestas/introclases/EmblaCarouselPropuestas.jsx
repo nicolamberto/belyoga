@@ -50,15 +50,13 @@ const EmblaCarouselPropuestas = () => {
     }, [emblaMainApi, onSelect])
 
     return (
-        <div className=" w-full">
+        <div className="w-full py-10 md:pb-20 md:pt-10 2xl:py-32">
 
-            <div className="embla flex justify-center items-center flex-col pt-20 w-[80%]">
+            <div className="embla flex justify-center items-center flex-col pt-0 w-[100%] xl:w-[80%]">
 
                 <div className="flex flex-col items-center justify-center pb-10">
-                    <p className='text-[50px] text-[#033908]'>Otras PROPUESTAS</p>
+                    <p className='text-[30px] lg:text-[30px] xl:text-[40px] pb-0 sm:pb-5 text-[#033908] font-bold'>Otras PROPUESTAS</p>
                 </div>
-
-                <div className="flex justify-center items-center flex-col gap-5 w-[80%]">
 
                     <div className="embla__viewport " ref={emblaMainRef}>
 
@@ -69,7 +67,7 @@ const EmblaCarouselPropuestas = () => {
 
                                     <div className="embla-thumbs__viewport" ref={emblaThumbsRef}>
 
-                                        <div className="embla-thumbs__container flex flex-row justify-center gap-10 items-center">
+                                        <div className="embla-thumbs__container flex flex-col sm:flex-row justify-center gap-0 sm:gap-10 items-center pb-5">
                                             {introPropuestas.map((item, index) => (
                                                 <Thumb
                                                     key={item.id}
@@ -92,7 +90,7 @@ const EmblaCarouselPropuestas = () => {
 
                     </div>
 
-                </div>
+                
 
             </div>
 

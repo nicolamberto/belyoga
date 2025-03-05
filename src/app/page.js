@@ -27,7 +27,7 @@ export default function Home() {
         <EmblaCarouselPropuestas />
         <CallToAction />
         <CarouselImgs />
-        {/* <ReviewList /> */}
+        <ReviewList />
 
       </main>
     </div>
