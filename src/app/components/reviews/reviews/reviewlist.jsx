@@ -11,7 +11,7 @@ export default function ReviewList() {
                     src={logo}
                     width={80}
                 />
-                <p className='text-[30px] lg:text-[30px] xl:text-[40px] pb-0 sm:pb-5 text-[#033908] font-bold text-center'>¿Que opinan nuestros ALUMNOS?</p>
+                <p className='text-[25px] xl:text-[35px] pb-0 sm:pb-5 text-[#033908] font-bold text-center'>¿Que opinan nuestros ALUMNOS?</p>
             </div>
             <Review />
         </div>

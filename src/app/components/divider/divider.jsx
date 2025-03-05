@@ -16,7 +16,7 @@ export default function Divider() {
     return (
         <>
             <div className="w-full justify-center items-center hidden sm:flex">
-                <div className='w-[100%] grid grid-cols-7 justify-items-center bg-[#79956c] text-[8px] lg:text-xs px-20'>
+                <div className='w-[100%] grid grid-cols-7 justify-items-center bg-[#79956c] font-[1px] text-[9px] lg:text-[11px] xl:text-[13px] px-20'>
 
                     <div className='flex flex-col justify-center items-center py-5'>
                         <div className='flex flex-col justify-center items-center text-[#f5ebe0]'>
@@ -62,7 +62,7 @@ export default function Divider() {
 
                     {dividerItems.map(item => (
 
-                        <div className='embla__slide w-[100%] justify-items-center bg-[#79956c] text-[15px] lg:text-xs px-20 block sm:hidden'>
+                        <div className='embla__slide w-[100%] justify-items-center bg-[#79956c] text-[10px] lg:text-xs px-20 block sm:hidden'>
 
                             <div className='flex flex-col justify-center items-center py-5'>
                                 <div className='flex flex-col justify-center items-center text-[#f5ebe0]'>

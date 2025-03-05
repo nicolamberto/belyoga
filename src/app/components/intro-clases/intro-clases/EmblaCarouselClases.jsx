@@ -55,8 +55,8 @@ const EmblaCarouselClases = () => {
 
             <div className="embla flex justify-center items-center flex-col w-[100%] xl:w-[80%]">
 
-                <div className="flex flex-col items-center justify-center">
-                    <p className='text-[30px] lg:text-[30px] xl:text-[40px] pb-0 sm:pb-5 text-[#033908] font-bold'>Nuestras CLASES</p>
+                <div className="flex flex-col items-center justify-center pb-5 xl:pb-10">
+                    <p className='text-[25px] xl:text-[35px] pb-0 text-[#033908] font-bold'>Nuestras CLASES</p>
                 </div>
 
                 <div className="embla__viewport " ref={emblaMainRef}>
@@ -68,7 +68,7 @@ const EmblaCarouselClases = () => {
 
                                 <div className="embla-thumbs__viewport flex justify-center items-center" ref={emblaThumbsRef}>
 
-                                    <div className="embla-thumbs__container flex flex-col sm:flex-row justify-center gap-0 sm:gap-10 items-center py-5">
+                                    <div className="embla-thumbs__container flex flex-col sm:flex-row justify-center gap-0 sm:gap-10 items-center pb-5 sm:pb-10">
                                         {introClases.map((item, index) => (
                                             <Thumb
                                                 key={item.id}
