@@ -1,28 +1,27 @@
 "use client"
 
 import React, { useState, useEffect, useCallback } from 'react'
+
 import useEmblaCarousel from 'embla-carousel-react'
 import { Thumb } from './EmblaCarouselThumbsButton'
 import Fade from 'embla-carousel-fade'
+
+
+import { yogaConvencional } from '@/app/lib/data/data'
+
+import ContainerIntroClases from '../containerclases'
+
 import '../css/embla.css'
 
-
-
-import { introClases } from '@/app/lib/data/data'
-import ContainerIntroClases from '../containerintroclases'
-
-
-
-
-const EmblaCarouselIntroClases = () => {
+const EmblaCarouselClases = () => {
 
     const options = {
         align: 'center',
         containScroll: false
     }
 
-    const [selectedIndex, setSelectedIndex] = useState(0)
 
+    const [selectedIndex, setSelectedIndex] = useState(0)
     const [emblaMainRef, emblaMainApi] = useEmblaCarousel(options, [Fade()])
     const [emblaThumbsRef, emblaThumbsApi] = useEmblaCarousel({
         containScroll: 'keepSnaps',
@@ -51,25 +50,23 @@ const EmblaCarouselIntroClases = () => {
     }, [emblaMainApi, onSelect])
 
     return (
-        <div className="w-full py-10 md:py-20 2xl:pb-32 2xl:pt-40">
+        <div className="w-full py-10 md:pb-20 md:pt-10 2xl:py-10">
 
-            <div className="embla flex justify-center items-center flex-col w-[100%] xl:w-[80%]">
+            <div className="embla flex justify-center items-center flex-col pt-0 w-[100%] xl:w-[80%]">
 
-                <div className="flex flex-col items-center justify-center pb-5 xl:pb-10">
-                    <p className='text-[25px] xl:text-[35px] pb-0 text-[#033908] font-bold'>Nuestras CLASES</p>
-                </div>
+           
 
                 <div className="embla__viewport " ref={emblaMainRef}>
 
                     <div className="embla__container w-full ">
+                        {yogaConvencional.map((item, index) => (
 
-                        {introClases.map((item, index) => (
                             <div className="embla__slide" >
 
-                                <div className="embla-thumbs__viewport flex justify-center items-center" ref={emblaThumbsRef}>
+                                <div className="embla-thumbs__viewport" ref={emblaThumbsRef}>
 
                                     <div className="embla-thumbs__container flex flex-col sm:flex-row justify-center gap-0 sm:gap-10 items-center pb-5 sm:pb-10">
-                                        {introClases.map((item, index) => (
+                                        {yogaConvencional.map((item, index) => (
                                             <Thumb
                                                 key={item.id}
                                                 onClick={() => onThumbClick(index)}
@@ -82,13 +79,16 @@ const EmblaCarouselIntroClases = () => {
 
                                 </div>
 
-                                <ContainerIntroClases name={item.name} img={item.img} />
+                                <ContainerIntroClases name={item.name} img={item.img} text1={item.text1} text2={item.text2} text3={item.text3} text4={item.text4} />
 
                             </div>
                         ))}
+
                     </div>
 
                 </div>
+
+
 
             </div>
 
@@ -98,4 +98,4 @@ const EmblaCarouselIntroClases = () => {
     )
 }
 
-export default EmblaCarouselIntroClases
+export default EmblaCarouselClases

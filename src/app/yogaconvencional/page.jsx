@@ -5,6 +5,7 @@ import Card from '../components/clases/card'
 import { yogaconvencional, yogaconvencionalsub } from '@/app/lib/data/data'
 import IntroClases from '../components/clases/introclases'
 import { yogaConvencional } from '@/app/lib/data/data'
+import EmblaCarouselClases from './components/clases/clases/EmblaCarouselClases'
 
 export default function Clases() {
 
@@ -16,20 +17,22 @@ export default function Clases() {
 
 
   return (
+    
     <div className="w-[100%] flex flex-col justify-center items-center bg-[#f5ebe0] bg-opacity-60">
 
+      <EmblaCarouselClases/>
 
-      {yogaConvencional.map(item => (
+      {/* {yogaConvencional.map(item => (
         <div className='flex flex-col justify-center items-center w-[60%] py-20'>
           <p className='text-[80px] text-[#033908] text-center py-8'>
             {item.name}
           </p>
 
           <div className=" flex flex-col gap-6">
-          <p>{item.text1}</p>
-          <p>{item.text2}</p>
-          <p>{item.text3}</p>
-          <p>{item.text4}</p>
+            <p>{item.text1}</p>
+            <p>{item.text2}</p>
+            <p>{item.text3}</p>
+            <p>{item.text4}</p>
 
           </div>
 
@@ -68,7 +71,7 @@ export default function Clases() {
 
 
         </div>
-      ))}
+      ))} */}
 
       <div className=' z-10 flex flex-col justify-center items-center w-[60%] py-20'>
 
@@ -76,7 +79,7 @@ export default function Clases() {
 
 
         {/* <p className=' text-4xl text-gray-800'>NUESTRAS CLASES</p> */}
-        <div className='flex flex-col justify-center items-center gap-10 w-[100%] pt-[1000px]'>
+        <div className='flex flex-col justify-center items-center gap-10 w-[100%]'>
           {yogaconvencionalsub.map(item => (
             <Card
               key={item.id}
