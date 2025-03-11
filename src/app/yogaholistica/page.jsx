@@ -16,7 +16,7 @@ export default function Clases() {
 
 
   return (
-    <div className="w-[100%] flex justify-center items-center bg-[#f5ebe0] bg-opacity-60">
+    <div className="w-[100%] flex justify-center items-center ">
 
       <div className=' z-10 flex flex-col justify-center items-center w-[60%] py-20'>
         {yogaholistica.map(item => (

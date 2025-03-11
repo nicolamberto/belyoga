@@ -330,3 +330,18 @@ export const dividerItems = [
     },
 
 ]
+
+
+export const yogaNidra = 
+    {
+        title: 'Yoga Nidra y Meditacion',
+        subtitle: 'Yoga Nidra y Meditación: un refugio para el alma',
+        introtext: 'En el ritmo acelerado de la vida moderna, encontrar momentos para pausar, respirar y simplemente ser se ha vuelto esencial. Yoga Nidra y la meditación son puertas hacia ese espacio interno de calma y regeneración, donde podemos reconectar con nuestra esencia más profunda.',
+        subtitle2: '¿Qué es el Yoga Nidra?',
+        text1: 'Conocido como el "sueño consciente", Yoga Nidra es una práctica guiada que te lleva a un estado profundo de relajación física, mental y emocional. Durante la sesión, te recuestas cómodamente mientras, a través de una serie de instrucciones, viajas hacia un lugar de descanso absoluto. No es solo relajación, es un proceso transformador que activa el poder de tu subconsciente y te ayuda a liberar tensiones, estrés acumulado y patrones limitantes.',
+        subtitle3: '¿Y la meditación?',
+        text2:'La meditación es el arte de habitar el presente. Lejos de ser un esfuerzo por “vaciar la mente”, es una práctica que nos invita a observar nuestros pensamientos, emociones y sensaciones sin juicio. Es un camino hacia la claridad mental, el equilibrio emocional y una conexión más consciente con la vida.',
+        subtitle4:'¿Qué puedes esperar de nuestras sesiones?',
+        text3:'En nuestras clases de Yoga Nidra y meditación, te ofrecemos un espacio cálido y seguro donde puedes desconectar del ruido externo y abrazar el silencio interno. Cada sesión está diseñada para que, a través de la respiración, la visualización y la presencia, encuentres un refugio dentro de ti.',
+        text4:'No necesitas experiencia previa, ni una mente "perfecta". Solo ven tal como eres, con la intención de regalarte un momento para ti. Aquí, cada respiración cuenta y cada instante es una oportunidad para descubrir el poder transformador de estar presente.',
+    }

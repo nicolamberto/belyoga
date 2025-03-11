@@ -29,8 +29,8 @@ export function EmblaCarousel() {
                             className='object-cover overflow-hidden'
                         />
                         <div className='absolute flex gap-4 text-xl text-[#fff] bottom-[5%] right-[5%]'>
-                            {socialMediaHero.map(item => (
-                                <button>{item.icon}</button>
+                            {socialMediaHero.map((item, index) => (
+                                <button key={index}>{item.icon}</button>
                             ))}
                         </div>
                     </div>

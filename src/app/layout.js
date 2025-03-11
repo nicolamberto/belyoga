@@ -4,7 +4,10 @@ import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
 import Contact from "./components/contact/contact";
 import localFont from 'next/font/local';
-
+import { FaWhatsapp } from "react-icons/fa";
+import whatsapp from '@/app/lib/whatsappicon.png'
+import Image from "next/image";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -47,12 +50,24 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${tanpearl.className} antialiased bg-[#f5ebe0] bg-opacity-60`}
+        className={`${tanaegean.className} antialiased bg-[#f5ebe0] bg-opacity-60 relative`}
       >
         <Header />
         {children}
         <Contact />
-        {/* <Footer /> */}
+        <div className="sticky z-50 bottom-0 right-0 p-2 rounded-full flex justify-end">
+          <Link
+            href={'https://api.whatsapp.com/send?phone=5493518522977&text=Hola!%20Quiero%20averiguar%20mas%20sobre%20yoga!%20Mi%20nombre%20es:%20'}
+            target="_blank"
+            className="">
+            <Image
+              src={whatsapp}
+              width={100}
+            />
+          </Link>
+        </div>
+        <Footer />
+
       </body>
     </html>
   );

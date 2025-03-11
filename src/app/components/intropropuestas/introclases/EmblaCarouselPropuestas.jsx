@@ -11,6 +11,8 @@ import { introPropuestas } from '@/app/lib/data/data'
 
 import ContainerIntroPropuestas from '../containerintropropuestas'
 
+import { motion } from 'framer-motion'
+
 import '../css/embla.css'
 
 const EmblaCarouselPropuestas = () => {
@@ -54,21 +56,35 @@ const EmblaCarouselPropuestas = () => {
 
             <div className="embla flex justify-center items-center flex-col pt-0 w-[100%] xl:w-[80%]">
 
-                <div className="flex flex-col items-center justify-center pb-5 xl:pb-10">
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    className="flex flex-col items-center justify-center pb-5 xl:pb-10">
                     <p className='text-[25px] xl:text-[35px] pb-0 text-[#033908] font-bold'>Otras PROPUESTAS</p>
-                </div>
+                </motion.div>
 
-                    <div className="embla__viewport " ref={emblaMainRef}>
+                <div className="embla__viewport " ref={emblaMainRef}>
 
-                        <div className="embla__container w-full ">
-                            {introPropuestas.map((item, index) => (
+                    <div className="embla__container w-full ">
+                        {introPropuestas.map((item, index) => (
 
-                                <div className="embla__slide" >
+                            <div key={index} className="embla__slide" >
 
-                                    <div className="embla-thumbs__viewport" ref={emblaThumbsRef}>
+                                <div className="embla-thumbs__viewport" ref={emblaThumbsRef}>
 
-                                        <div className="embla-thumbs__container flex flex-col sm:flex-row justify-center gap-0 sm:gap-10 items-center pb-5 sm:pb-10">
-                                            {introPropuestas.map((item, index) => (
+                                    <div className="embla-thumbs__container flex flex-col sm:flex-row justify-center gap-0 sm:gap-10 items-center pb-5 sm:pb-10">
+                                        {introPropuestas.map((item, index) => (
+                                            <motion.div
+                                                initial={{ y: -5, opacity: 0 }}
+                                                whileInView={{ y: 0, opacity: 1 }}
+                                                transition={{
+                                                    duration: 0.1,
+                                                    ease: "easeInOut",
+                                                    delay: 0.3 * index
+                                                }}
+                                                viewport={{ once: true }}
+                                            >
                                                 <Thumb
                                                     key={item.id}
                                                     onClick={() => onThumbClick(index)}
@@ -76,21 +92,22 @@ const EmblaCarouselPropuestas = () => {
                                                     index={index}
                                                     name={item.name}
                                                 />
-                                            ))}
-                                        </div>
-
+                                            </motion.div>
+                                        ))}
                                     </div>
 
-                                    <ContainerIntroPropuestas name={item.name} img={item.img} />
-
                                 </div>
-                            ))}
 
-                        </div>
+                                <ContainerIntroPropuestas name={item.name} img={item.img} />
+
+                            </div>
+                        ))}
 
                     </div>
 
-                
+                </div>
+
+
 
             </div>
 

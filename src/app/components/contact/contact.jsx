@@ -12,6 +12,7 @@ export default function Contact() {
                 <div className='hidden lg:block w-[30%]'>
                     <Image
                         src={mapa}
+                        alt='mapa'
                     />
                 </div>
                 <div className=' flex flex-col justify-between h-full'>

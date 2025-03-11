@@ -9,7 +9,7 @@ export const Thumb = (props) => {
         selected ? ' bg-[#79956c] bg-opacity-40 border-[#f5ebe0]' : ' '
       )}
     >
-      <button 
+      <button
         onClick={onClick}
         type="button"
         className="embla-thumbs__slide__number text-[11px] lg:text-[11px] xl:text-[13px]"

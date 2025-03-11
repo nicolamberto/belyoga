@@ -18,7 +18,7 @@ import CarouselImgs from "./components/carouselimgs/carouselimgs";
 export default function Home() {
   return (
     <div className="relative ">
-      <main className="flex justify-center items-center flex-col gap-5">
+      <main className="flex justify-center items-center flex-col gap-5 ">
 
         <HeroSection />
         <IntroYoga />

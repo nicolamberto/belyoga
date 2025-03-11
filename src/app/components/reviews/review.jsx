@@ -6,13 +6,20 @@ import { reviews } from "@/app/lib/data/data";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Scrollbar, A11y } from 'swiper/modules';
 
+import { motion } from 'framer-motion';
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 
 export default function Review() {
     return (
 
-        <div className="w-[80%] lg:w-[100%] flex justify-center items-center">
+        <motion.div 
+        initial={{ opacity: 0}}
+        whileInView={{ opacity: 1 }}
+        transition={{delay:0.5, duration: 0.3}}
+        viewport={{ once: true }}
+        className="w-[80%] lg:w-[100%] flex justify-center items-center">
             <div className='max-w-[400px] sm:max-w-[567px] md:max-w-[823px] 2xl:max-w-[1200px] w-[100%] py-10 flex'>
                 <Swiper
                     // install Swiper modules
@@ -64,8 +71,6 @@ export default function Review() {
                                     </p>
                                 </div>
                             </div>
-
-
                         </SwiperSlide>
 
 
@@ -75,6 +80,6 @@ export default function Review() {
 
                 </Swiper>
             </div>
-        </div>
+        </motion.div>
     )
 }

@@ -17,8 +17,6 @@ export default function HeroSection() {
             <div className='flex justify-center items-center overflow-hidden'>
                 <EmblaCarousel />
             </div>
-
-
         </div>
     )
 }

@@ -10,6 +10,7 @@ export default function CallToAction() {
              <Image
                 src={divisor}
                 className='absolute pb-40'
+                alt='divisor'
             /> 
             <div className="text-[11px] sm:text-[13px] lg:text-[15px] xl:text-[17px] text-center text-[#033908] z-50">
                 <p>Encuentra tu paz con el yoga.</p>
