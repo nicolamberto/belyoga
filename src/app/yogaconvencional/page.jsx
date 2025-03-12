@@ -19,7 +19,7 @@ export default function Clases() {
 
   return (
 
-    <div className="w-[100%] flex flex-col justify-center items-center gap-28 py-20">
+    <div className="w-[100%] flex flex-col justify-center items-center gap-28">
 
       <EmblaCarouselClases />
 

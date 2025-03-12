@@ -51,7 +51,7 @@ const EmblaCarouselIntroClases = () => {
     }, [emblaMainApi, onSelect])
 
     return (
-        <div className="w-full py-10 md:py-20 2xl:pb-32 2xl:pt-40">
+        <div className="w-full py-10 md:py-20">
 
             <div className="embla flex justify-center items-center flex-col w-[100%] xl:w-[80%]">
 

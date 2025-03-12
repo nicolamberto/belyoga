@@ -16,7 +16,7 @@ const MotionImage = motion(Image)
 
 export default function About() {
   return (
-    <div id='about' className=' flex flex-col justify-center items-center pt-32 px-3 xl:px-0'>
+    <div id='about' className=' flex flex-col justify-center items-center pt-20 md:pt-32 px-3 xl:px-0'>
 
 
       {/* <p className='text-5xl text-gray-800'>SOBRE MI</p> */}
@@ -41,7 +41,7 @@ export default function About() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className='text-[30px] lg:text-[40px] xl:text-[50px] text-[#033908]'>
+            className='text-[30px] lg:text-[40px] xl:text-[50px] text-[#033908] font-bold'>
             Sobre MI
           </motion.p>
 
@@ -116,7 +116,7 @@ export default function About() {
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className='text-[30px] lg:text-[40px] xl:text-[50px] text-[#033908]'>Trayectoria</motion.p>
+            className='text-[30px] lg:text-[40px] xl:text-[50px] text-[#033908] font-bold'>Trayectoria</motion.p>
 
           <div className=' flex flex-col ml-2'>
 

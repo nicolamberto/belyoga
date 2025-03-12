@@ -52,7 +52,7 @@ const EmblaCarouselPropuestas = () => {
     }, [emblaMainApi, onSelect])
 
     return (
-        <div className="w-full py-10 md:pb-20 md:pt-10 2xl:py-32">
+        <div className="w-full py-10 md:pb-20 md:pt-10 ">
 
             <div className="embla flex justify-center items-center flex-col pt-0 w-[100%] xl:w-[80%]">
 

@@ -3,6 +3,8 @@ import React from 'react'
 import mapa from '@/app/lib/mapa.png'
 import Image from 'next/image'
 import Link from 'next/link'
+import Map from './map/map'
+import DynamicMap from './map/dynamicmap'
 
 export default function Contact() {
     return (
@@ -10,10 +12,7 @@ export default function Contact() {
             <div className="w-[60%] flex flex-row justify-center items-center">
 
                 <div className='hidden lg:block w-[30%]'>
-                    <Image
-                        src={mapa}
-                        alt='mapa'
-                    />
+                    <DynamicMap/>
                 </div>
                 <div className=' flex flex-col justify-between h-full'>
                     <div className="">
@@ -24,7 +23,7 @@ export default function Contact() {
                     </div>
 
 
-                    <div className="flex flex-row justify-center items-center gap-10 pt-5 lg:pt-10 xl:pt-20 text-[6px] sm:text-[13px] lg:text-[15px] xl:text-[17px]">
+                    <div className="flex flex-row justify-center md:justify-start items-center gap-10 pt-5 lg:pt-10 xl:pt-20 text-[6px] sm:text-[13px] lg:text-[15px] xl:text-[17px]">
                   
                         <Link href={'#'} className='px-6 py-2 rounded-full bg-[#033908] text-[#f5ebe0]'><button>Google Maps</button></Link>
                         <Link href={'#'} className='px-6 py-2 rounded-full bg-[#033908] text-[#f5ebe0]'><button> Contacta ya</button></Link>

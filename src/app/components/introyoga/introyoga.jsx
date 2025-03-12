@@ -14,7 +14,7 @@ const MotionImage = motion(Image)
 
 export default function IntroYoga() {
     return (
-        <div className=' flex justify-center flex-col items-center py-10 md:py-20 2xl:py-40 '>
+        <div className=' flex justify-center flex-col items-center py-20 md:py-20 2xl:py-32 '>
 
             <motion.div 
             initial={{opacity: 0, y: 30}}

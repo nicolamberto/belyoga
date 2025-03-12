@@ -8,6 +8,8 @@ import { FaWhatsapp } from "react-icons/fa";
 import whatsapp from '@/app/lib/whatsappicon.png'
 import Image from "next/image";
 import Link from "next/link";
+import logo from '@/app/lib/logo.png'
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -42,13 +44,18 @@ const tanpearl = localFont({
 })
 
 export const metadata = {
-  title: "Bel Yoga Estudio",
-  description: "landing-page-belyogaestudio",
+  title: "Bel Yoga Espacio",
+  description: "Espacio de yoga en Córdoba, Argentina",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href={logo} />
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+      </head>
       <body
         className={`${tanaegean.className} antialiased bg-[#f5ebe0] bg-opacity-60 relative`}
       >
