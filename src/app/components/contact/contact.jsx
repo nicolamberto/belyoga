@@ -12,7 +12,7 @@ export default function Contact() {
             <div className="w-[60%] flex flex-row justify-center items-center">
 
                 <div className='hidden lg:block w-[30%]'>
-                    <DynamicMap/>
+                   
                 </div>
                 <div className=' flex flex-col justify-between h-full'>
                     <div className="">
