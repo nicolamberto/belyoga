@@ -6,7 +6,7 @@ import { Thumb } from './EmblaCarouselThumbsButton'
 import Fade from 'embla-carousel-fade'
 import '../css/embla.css'
 
-
+import { tanpearl } from '@/app/layout'
 
 import { introClases } from '@/app/lib/data/data'
 import ContainerIntroClases from '../containerintroclases'
@@ -60,7 +60,7 @@ const EmblaCarouselIntroClases = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     className="flex flex-col items-center justify-center pb-5 xl:pb-10">
-                    <p className='text-[25px] xl:text-[35px] pb-0 text-[#033908] font-bold'>Nuestras CLASES</p>
+                    <p className={`text-[25px] xl:text-[35px] pb-0 text-[#033908] font-bold ${tanpearl.className}`}>Nuestras CLASES</p>
                 </motion.div>
 
                 <div className="embla__viewport " ref={emblaMainRef}>

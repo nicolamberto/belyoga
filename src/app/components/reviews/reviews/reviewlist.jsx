@@ -6,6 +6,7 @@ import logo from '@/app/lib/logo.png'
 import Image from 'next/image'
 
 import { motion } from 'framer-motion'
+import { tanpearl } from '@/app/layout'
 const MotionImage = motion(Image)
 
 export default function ReviewList() {
@@ -26,7 +27,7 @@ export default function ReviewList() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.2 }}
-                    className='text-[25px] xl:text-[35px] pb-0 sm:pb-5 text-[#033908] font-bold text-center'>
+                    className={`text-[25px] xl:text-[35px] pb-0 sm:pb-5 text-[#033908] font-bold text-center ${tanpearl.className}`}>
                     ¿Que opinan nuestros ALUMNOS?
                 </motion.p>
             </div>

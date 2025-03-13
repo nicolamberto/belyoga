@@ -79,12 +79,12 @@ export default function Divider() {
                     className='hidden md:w-[35%] xl:w-[50%] h-full text-[5px] lg:text-[7px] xl:text-[11px] md:flex justify-center items-center text-[#f5ebe0] text-opacity-70 '
                 >
                     <div className=" md:w-[90%] xl:w-[80%] 2xl:w-[60%] flex flex-col justify-center items-start gap-6">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, autem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor iste architecto, ullam illo veritatis fugiat expedita ipsum ratione delectus aut.</p>
+                        <p>Descubre el equilibrio entre cuerpo y mente con nuestras clases de yoga presenciales y virtuales. Conéctate con tu bienestar desde cualquier lugar y transforma tu rutina con la guía de instructores expertos</p>
                         <button
                             onMouseEnter={() => setHover(true)}
                             onMouseLeave={() => setHover(false)}
                             className='text-green-400 relative'>
-                            <p>Join Member</p>
+                            <p>Unete Ahora</p>
                             <AnimatePresence>
                                 {hover && (
                                     <motion.div

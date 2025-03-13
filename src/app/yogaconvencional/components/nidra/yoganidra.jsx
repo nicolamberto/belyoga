@@ -7,6 +7,7 @@ import CallToAction from '@/app/components/cta/cta'
 
 
 import { motion } from 'framer-motion'
+import { tanpearl } from '@/app/layout'
 const MotionImage = motion(Image)
 
 export default function YogaNidra() {
@@ -17,7 +18,7 @@ export default function YogaNidra() {
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className='text-[25px] xl:text-[35px] pb-0 text-[#033908] font-bold'
+                    className={`text-[25px] xl:text-[35px] pb-0 text-[#033908] font-bold ${tanpearl.className}`}
                 >
                     {yogaNidra.title}
                 </motion.p>

@@ -6,7 +6,7 @@ import React from 'react'
 import introyoga from '@/app/lib/introyoga.png'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-
+import { tanpearl } from '@/app/layout'
 
 const MotionImage = motion(Image)
 
@@ -22,10 +22,10 @@ export default function IntroYoga() {
             viewport={{ once: true }}
             className="flex flex-col items-center justify-center pb-10 sm:pb-5 2xl:pb-0"
             >
-                <p className={`text-[25px] xl:text-[35px] text-[#033908] font-bold`}>¿Que es el YOGA?</p>
+                <p className={`text-[25px] xl:text-[35px] text-[#033908] font-bold ${tanpearl.className}`}>¿Que es el YOGA?</p>
             </motion.div>
 
-            <div className="flex justify-center items-center gap-5 w-[100%] xl:w-[80%] 2xl:w-[70%] px-5 xl:px-0">
+            <div className="flex justify-center items-center gap-5 w-[100%] xl:w-[80%] 2xl:w-[70%] px-7 xl:px-0">
 
                 <div className='hidden sm:block'>
                     <MotionImage

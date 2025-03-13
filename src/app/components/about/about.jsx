@@ -10,13 +10,14 @@ import { aboutSquares } from '@/app/lib/data/data';
 import Image from 'next/image'
 
 import { motion } from 'framer-motion';
+import { tanpearl } from '@/app/layout';
 const MotionImage = motion(Image)
 
 
 
 export default function About() {
   return (
-    <div id='about' className=' flex flex-col justify-center items-center pt-20 md:pt-32 px-3 xl:px-0'>
+    <div id='about' className=' flex flex-col justify-center items-center pt-20 md:pt-32 px-7 xl:px-0'>
 
 
       {/* <p className='text-5xl text-gray-800'>SOBRE MI</p> */}
@@ -52,7 +53,7 @@ export default function About() {
             viewport={{ once: true }}
             className=' flex flex-col ml-2'>
 
-            <h2 className='sm:text-[15px] lg:text-[20px] xl:text-[25px] text-[#033908]'>Belén Sánchez</h2>
+            <h2 className={`sm:text-[15px] lg:text-[20px] xl:text-[25px] text-[#033908] ${tanpearl.className}`}>Belén Sánchez</h2>
 
             <div
 
@@ -116,7 +117,7 @@ export default function About() {
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className='text-[30px] lg:text-[40px] xl:text-[50px] text-[#033908] font-bold'>Trayectoria</motion.p>
+            className={`text-[30px] lg:text-[40px] xl:text-[50px] text-[#033908] font-bold ${tanpearl.className}`}>Trayectoria</motion.p>
 
           <div className=' flex flex-col ml-2'>
 
@@ -128,11 +129,11 @@ export default function About() {
               className='h-[100%] flex flex-col justify-center gap-6 text-[#033908] text-opacity-80 text-justify font-[1px] text-[11px] lg:text-[13px] xl:text-[15px] pt-5'>
 
               <p>A lo largo de los años, he profundizado mi aprendizaje con reconocidos maestros y escuelas internacionales, adquiriendo herramientas valiosas para compartir esta disciplina con otras personas:</p>
-              <ul className=' flex flex-col gap-4 list-disc pl-10'>
+              <ul className=' flex flex-col gap-4 list-disc pl-5 lg:pl-10 font-[1px] text-[11px] lg:text-[13px] xl:text-[15px]'>
                 <li>Especialización en Yogaterapia y Ayurveda.</li>
                 <li>Talleres y coaching a cargo de la Escuela de Yoga Clásico y Científico Arturo García.</li>
                 <li>Profesorado Superior en Yoga HARI OM, certificado por:
-                  <ul className='pl-14 flex flex-col gap-3 py-3 text-sm list-disc'>
+                  <ul className=' pl-7 lg:pl-14 flex flex-col gap-3 py-3 list-disc font-[1px] text-[11px] lg:text-[13px] xl:text-[15px]'>
                     <li>Yoga Alliance International (India).</li>
                     <li>World Yoga Federation (WYF).</li>
                     <li>Auspiciado por AIPYA (Asociación Internacional de Profesionales de Yoga y Ayurveda) y la Asociación Colombiana de Yoga.</li>

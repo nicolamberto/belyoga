@@ -43,7 +43,9 @@ const tanpearl = localFont({
   ]
 })
 
-export const metadata = {
+export {tanpearl}
+
+const metadata = {
   title: "Bel Yoga Espacio",
   description: "Espacio de yoga en Córdoba, Argentina",
 };

@@ -29,7 +29,7 @@ export default function ContainerIntroClases({ name, img }) {
                         <p>Sumérgete en la experiencia transformadora del yoga en un entorno cálido y cercano. En nuestras clases presenciales, disfrutarás de la conexión directa con el instructor y otros practicantes, mientras profundizas en la respiraciónSumérgete en la experiencia transformadora del yoga en un entorno cálido y cercano. </p>
 
                         <div className="flex justify-end pr-10 items-center flex-row">
-                            <Link href={'/yogaconvencional'} className='px-6 py-2 rounded-full bg-[#033908] text-[#f5ebe0]'>Leer mas</Link>
+                            <Link href={'/yogaconvencional'} className='px-6 py-2 rounded-full bg-[#033908] text-[#f5ebe0] hover:text-[#033908] hover:bg-transparent border-[#79956c] hover:bg-opacity-60 transition'>Leer mas</Link>
                         </div>
 
                     </div>

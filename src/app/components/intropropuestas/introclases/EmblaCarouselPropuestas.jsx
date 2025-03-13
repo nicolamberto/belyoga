@@ -6,6 +6,7 @@ import useEmblaCarousel from 'embla-carousel-react'
 import { Thumb } from './EmblaCarouselThumbsButton'
 import Fade from 'embla-carousel-fade'
 
+import { tanpearl } from '@/app/layout'
 
 import { introPropuestas } from '@/app/lib/data/data'
 
@@ -61,7 +62,7 @@ const EmblaCarouselPropuestas = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     className="flex flex-col items-center justify-center pb-5 xl:pb-10">
-                    <p className='text-[25px] xl:text-[35px] pb-0 text-[#033908] font-bold'>Otras PROPUESTAS</p>
+                    <p className={`text-[25px] xl:text-[35px] pb-0 text-[#033908] font-bold ${tanpearl.className}`}>Otras PROPUESTAS</p>
                 </motion.div>
 
                 <div className="embla__viewport " ref={emblaMainRef}>
