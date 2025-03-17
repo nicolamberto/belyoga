@@ -5,7 +5,7 @@ export const Thumb = (props) => {
 
   return (
     <div
-      className={'embla-thumbs__slide border border-[#79956c] border-opacity-50  transition px-10 py-2 rounded-full shadow-sm'.concat(
+      className={'embla-thumbs__slide border border-[#79956c] border-opacity-50 transition px-10 py-2 rounded-full shadow-sm hover:shadow-md'.concat(
         selected ? ' bg-[#79956c] bg-opacity-40 border-[#f5ebe0]' : ' '
       )}
     >

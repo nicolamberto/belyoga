@@ -11,7 +11,7 @@ import { socialMediaHero } from '@/app/lib/data/data';
 
 
 
-export function EmblaCarousel() {
+export function EmblaCarouselMobile() {
     const [emblaRef] = useEmblaCarousel({ loop: true }, [
         Autoplay({ delay: 2000 })
     ])
@@ -20,19 +20,21 @@ export function EmblaCarousel() {
         <div className="embla" ref={emblaRef}>
             <div className="embla__container">
 
-                {carouselHeroSectionDesktop.map(item => (
-                    <div key={item.name} className="embla__slide items-center justify-center relative hidden md:flex w-[100%]">
+
+                {carouselHeroSectionMobile.map(item => (
+                    <div key={item.name} className="embla__slide items-center justify-center relative flex w-[100%]">
                         <Image
                             src={item.img}
                             quality={true}
                             alt={item.name}
+                            className=' w-full'
 
-                            className='object-fill overflow-hidden'
 
                         />
-                 
                     </div>
                 ))}
+
+
             </div>
         </div>
     )

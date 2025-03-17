@@ -18,7 +18,7 @@ export const navbar = [
     },
     {
         title: 'YOGA EMPRESARIAL',
-        link: '#'
+        link: '/yogaempresarial'
     },
     {
         title: 'CONTACTO',
@@ -26,11 +26,11 @@ export const navbar = [
     }
 ]
 
-import banner1hero from '@/app/lib/bannerbel3.png'
-import banner2hero from '@/app/lib/bannerbel2.png'
-import banner3hero from '@/app/lib/bannerbel1.png'
+import banner1hero from '@/app/lib/banners/desktop/bannerdesktop1.png'
+import banner2hero from '@/app/lib/banners/desktop/bannerdsktop2.png'
+import banner3hero from '@/app/lib/banners/desktop/bannerdesktop3.png'
 
-export const carouselHeroSection = [
+export const carouselHeroSectionDesktop = [
     {
         name: 'alt1',
         img: banner1hero
@@ -42,6 +42,25 @@ export const carouselHeroSection = [
     {
         name: 'alt3',
         img: banner3hero
+    },
+]
+
+import banner1heromobile from '@/app/lib/banners/mobile/bannermobile1.png'
+import banner2heromobile from '@/app/lib/banners/mobile/bannermobile2.png'
+import banner3heromobile from '@/app/lib/banners/mobile/bannermobile3.png'
+
+export const carouselHeroSectionMobile = [
+    {
+        name: 'alt1',
+        img: banner1heromobile
+    },
+    {
+        name: 'alt2',
+        img: banner2heromobile
+    },
+    {
+        name: 'alt3',
+        img: banner3heromobile
     },
 ]
 
@@ -197,42 +216,47 @@ export const reviews = [
     },
 ]
 
-import img1 from '@/app/lib/yogaintegral.png'
-import img2 from '@/app/lib/introclases2.jpg'
-import img3 from '@/app/lib/introclases3.jpg'
+import img1 from '@/app/lib/hathayoga.png'
+import img2 from '@/app/lib/yogaintegral.png'
+import img3 from '@/app/lib/yogaterapia.png'
 
 
 export const introClases = [
     {
         name: 'Hatha Yoga',
-        text1: 'Sumérgete en la experiencia transformadora del yoga en un entorno cálido y cercano. En nuestras clases presenciales, disfrutarás de la conexión directa con el instructor y otros practicantes, mientras profundizas en la respiración',
+        text1: 'Si buscas un yoga accesible, equilibrado y perfecto para principiantes, el Hatha Yoga es para vos. Esta práctica tradicional combina posturas suaves con técnicas de respiración y relajación profunda, ayudando a fortalecer el cuerpo, mejorar la flexibilidad y reducir el estrés. Es una forma ideal de conectar con tu bienestar y recuperar la armonía entre cuerpo y mente.',
+        text2: 'Cada sesión de Hatha Yoga te brinda un espacio de calma y autocuidado, sin exigencias ni apuros. A través de movimientos pausados y controlados, podés liberar tensiones, mejorar tu postura y aumentar tu energía vital. Animate a descubrir el poder del yoga y encontrá en cada clase un momento para vos.',
         id: 1,
-        img: img1
+        img: img3
     },
     {
         name: 'Yoga Integral',
-        text1: 'Sumérgete en la experiencia transformadora del yoga en un entorno cálido y cercano. En nuestras clases presenciales, disfrutarás de la conexión directa con el instructor y otros practicantes, mientras profundizas en la respiración',
+        text1: 'El Yoga Integral es mucho más que una simple práctica física: es un camino hacia la armonía total. Con una combinación de posturas, respiración consciente, meditación y principios de la filosofía yogui, este enfoque busca equilibrar cuerpo, mente y espíritu. Es ideal para quienes desean una experiencia completa que los ayude a mejorar su bienestar físico y emocional.',
+        text2: 'Si buscás un yoga que te ayude a relajarte, pero también a profundizar en tu crecimiento personal, el Yoga Integral es tu mejor opción. A través de clases dinámicas y enriquecedoras, vas a desarrollar mayor conciencia corporal, calma mental y una conexión profunda contigo mismo. Sumate y empezá a transformar tu vida desde adentro.',
         id: 2,
-        img: img1
+        img: img2
 
     },
     {
         name: 'Yoga Terapia',
-        text1: 'Sumérgete en la experiencia transformadora del yoga en un entorno cálido y cercano. En nuestras clases presenciales, disfrutarás de la conexión directa con el instructor y otros practicantes, mientras profundizas en la respiración',
+        text1: 'El Yoga Terapia está diseñado para brindarte bienestar a medida. Si sufrís de dolores musculares, estrés crónico, ansiedad o cualquier otra condición física o emocional, esta práctica adapta las posturas y técnicas de respiración para ayudarte a sanar y recuperar tu equilibrio. Cada sesión es personalizada y pensada para atender tus necesidades específicas.',
+        text2: 'No importa tu edad o nivel de experiencia, el Yoga Terapia es una herramienta poderosa para mejorar tu calidad de vida. Con una práctica enfocada en la salud y el bienestar, vas a sentir alivio, relajación y un renovado bienestar físico y mental. Dale a tu cuerpo el cuidado que merece y empezá hoy mismo este camino de sanación.',
         id: 3,
-        img: img1
+        img: img3
     },
 ]
 
 export const introPropuestas = [
     {
         name: 'Yoga Empresarial',
-        text1: 'Sumérgete en la experiencia transformadora del yoga en un entorno cálido y cercano. En nuestras clases presenciales, disfrutarás de la conexión directa con el instructor y otros practicantes, mientras profundizas en la respiración',
+        text1: 'Mejorá el bienestar y la productividad de tu equipo con nuestras experiencias de yoga en el ámbito laboral. A través de sesiones diseñadas para reducir el estrés, aumentar la concentración y fomentar la conexión entre colaboradores, ayudamos a crear un entorno de trabajo más saludable y armonioso. Combinamos movimiento, respiración y relajación para aliviar tensiones, potenciar la creatividad y mejorar el rendimiento general. Invertí en el bienestar de tu equipo y promové una cultura organizacional equilibrada, eficiente y colaborativa con nuestra propuesta de yoga corporativo.',
         id: 1,
+        link: '/yogaempresarial'
     }, {
         name: 'Experiencias Holísticas',
-        text1: 'Sumérgete en la experiencia transformadora del yoga en un entorno cálido y cercano. En nuestras clases presenciales, disfrutarás de la conexión directa con el instructor y otros practicantes, mientras profundizas en la respiración',
+        text1: 'Descubrí el poder transformador del turismo holístico en la provincia de Córdoba. Con su imponente naturaleza, su legado cultural y su energía única, este destino invita a la conexión profunda con uno mismo y con el entorno. Nuestra propuesta integra experiencias que combinan prácticas ancestrales, terapias contemporáneas y productos locales, creando momentos de bienestar que nutren cuerpo, mente y espíritu. A través de actividades inmersivas y sostenibles, fomentamos un turismo vivencial que enriquece a los visitantes y genera un impacto positivo en la comunidad local.',
         id: 2,
+        link: '/yogaholistica'
     },
 
 ]

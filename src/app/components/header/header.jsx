@@ -3,57 +3,32 @@
 import React, { useEffect, useState } from 'react'
 import logo from '@/app/lib/logosoloclaro.png'
 import Image from 'next/image'
-import { navbar } from '@/app/lib/data/data'
+import { navbar, socialMediaHero } from '@/app/lib/data/data'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 
 export default function Header() {
 
-    const [color, setColor] = useState(true)
-    const [hover, setHover] = useState(null)
+
     const [isMobileNavOpen, setIsMobileNavOpen] = useState(false)
-    const [hasEntered, setHasEntered] = useState(false)
 
     const MotionLink = motion(Link)
-
-    const changeColor = () => {
-        if (typeof window !== 'undefined' && window.scrollY > 800) {
-            setColor(true)
-        } else {
-            setColor(false)
-        }
-    }
-
-
-    useEffect(() => {
-        setHasEntered(true)
-    }, [])
-
-    /*     useEffect(() => {
-            if (typeof window !== 'undefined') {
-                window.addEventListener('scroll', changeColor)
-            }
-    
-            return () => {
-                if (typeof window !== 'undefined') {
-                    window.removeEventListener('scroll', changeColor)
-                }
-            }
-        }, []) */
-
 
     return (
         <motion.div
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.05 }}
-            className=' w-full flex justify-center items-center fixed top-0 z-50 bg-[#033908] transition bg-opacity-90 duration-300' >
-            <div className=' w-[90%] h-12 flex items-center justify-between relative'>
-                <Image
-                    src={logo}
-                    width={60}
-                    alt='image'
-                />
+            className=' w-full flex justify-center items-center sticky top-0 z-50 bg-[#033908] transition bg-opacity-90 duration-300' >
+            <div className=' w-[90%] h-[43px] flex items-center justify-between relative'>
+                <Link href={'/'}>
+                    <Image
+                        src={logo}
+                        width={60}
+                        alt='image'
+                    />
+                </Link>
+
                 <div className='hidden md:flex justify-between'>
                     <ul className='flex items-center gap-8 xl:gap-16 justify-center text-[#f5ebe0] cursor-pointer font-semibold'>
 
@@ -81,31 +56,22 @@ export default function Header() {
                                     {item.title}
                                 </motion.p>
 
-                                <AnimatePresence>
-                                    {hover === item.title && (
-                                        <motion.div
-                                            layoutId="underline"
-                                            className="absolute left-0 right-0 bottom-0 h-px bg-white"
-                                            initial={{ opacity: 0 }}
-                                            animate={{ opacity: 1 }}
-                                            exit={{
-                                                opacity: 0,
-                                                transition: {
-                                                    duration: 0.3,
-                                                    ease: "easeInOut",
-                                                    delay: 0.2,
-                                                },
-                                            }}
-                                        />
-                                    )}
-                                </AnimatePresence>
-
                             </MotionLink>
                         ))}
                     </ul>
 
                 </div>
-                <button className='bg-[#f5ebe0] px-4 py-[2px] rounded-full border border-green-900 text-sm text-[#033908] hover:text-[#f5ebe0] hover:bg-[#033908] transition hidden md:block'>Contactame!</button>
+                <div className='hidden md:flex flex-row justify-center items-center gap-3 lg:gap-6 text-[#f5ebe0]  text-[15px] lg:text-[20px]'>
+                    {socialMediaHero.map((item, index) => (
+                        <motion.button
+                            initial={{ opacity: 0.9 }}
+                            whileHover={{ scale: 1.1, opacity: 1 }}
+                            whileTap={{ scale: 0.9 }}
+                            key={index}>
+                            {item.icon}
+                        </motion.button>
+                    ))}
+                </div>
 
                 <button onClick={() => setIsMobileNavOpen((old) => !old)} className="md:hidden absolute right-2 top-1/2 -translate-y-1/2 space-y-1 flex flex-col justify-center items-center h-5 w-5 z-30">
                     <motion.span

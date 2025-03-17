@@ -74,16 +74,7 @@ const EmblaCarouselIntroClases = () => {
 
                                     <div className="embla-thumbs__container flex flex-col sm:flex-row justify-center gap-0 sm:gap-10 items-center pb-5 sm:pb-10">
                                         {introClases.map((item, index) => (
-                                            <motion.div
-                                                initial={{ y: -5, opacity: 0 }}
-                                                whileInView={{ y: 0, opacity: 1 }}
-                                                transition={{
-                                                    duration: 0.1,
-                                                    ease: "easeInOut",
-                                                    delay: 0.3
-                                                }}
-                                                viewport={{ once: true }}
-                                            >
+                                            
                                                 <Thumb
                                                     key={item.id}
                                                     onClick={() => onThumbClick(index)}
@@ -91,14 +82,13 @@ const EmblaCarouselIntroClases = () => {
                                                     index={index}
                                                     name={item.name}
                                                 />
-                                            </motion.div>
 
                                         ))}
                                     </div>
 
                                 </div>
 
-                                <ContainerIntroClases name={item.name} img={item.img} />
+                                <ContainerIntroClases name={item.name} img={item.img} text1={item.text1} text2={item.text2} />
 
                             </div>
                         ))}

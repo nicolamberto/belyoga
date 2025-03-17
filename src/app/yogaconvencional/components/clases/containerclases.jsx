@@ -76,7 +76,7 @@ export default function ContainerIntroClases({ name, text1, text2, text3, text4 
                     viewport={{ once: true }}
 
                     className="flex justify-center items-center flex-row font-[1px] text-[11px] lg:text-[13px] xl:text-[15px]">
-                    <Link href={'/yogaconvencional'} className='px-6 py-2 rounded-full bg-[#033908] text-[#f5ebe0]'>Reserva Tu Clase Ya!</Link>
+                    <Link target='_blank' href={'https://api.whatsapp.com/send?phone=5493518522977&text=Hola!%20Quiero%20averiguar%20mas%20sobre%20yoga!%20Mi%20nombre%20es:%20'} className='px-6 py-2 rounded-full bg-[#033908] text-[#f5ebe0] hover:text-[#033908] hover:font-extrabold hover:bg-transparent border-[#79956c] hover:bg-opacity-60 transition'>Reserva Tu Clase Ya!</Link>
                 </motion.div>
 
             </div>

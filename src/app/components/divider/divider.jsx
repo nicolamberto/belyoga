@@ -8,6 +8,7 @@ import Autoplay from 'embla-carousel-autoplay'
 import { dividerItems } from '@/app/lib/data/data'
 
 import { AnimatePresence, motion } from 'framer-motion'
+import Link from 'next/link'
 
 export default function Divider() {
 
@@ -80,7 +81,9 @@ export default function Divider() {
                 >
                     <div className=" md:w-[90%] xl:w-[80%] 2xl:w-[60%] flex flex-col justify-center items-start gap-6">
                         <p>Descubre el equilibrio entre cuerpo y mente con nuestras clases de yoga presenciales y virtuales. Conéctate con tu bienestar desde cualquier lugar y transforma tu rutina con la guía de instructores expertos</p>
-                        <button
+                        <Link
+                        target='_blank'
+                            href={'https://api.whatsapp.com/send?phone=5493518522977&text=Hola!%20Quiero%20averiguar%20mas%20sobre%20yoga!%20Mi%20nombre%20es:%20'}
                             onMouseEnter={() => setHover(true)}
                             onMouseLeave={() => setHover(false)}
                             className='text-green-400 relative'>
@@ -103,7 +106,7 @@ export default function Divider() {
                                     />
                                 )}
                             </AnimatePresence>
-                        </button>
+                        </Link>
                     </div>
 
                 </motion.div>

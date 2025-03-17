@@ -1,15 +1,16 @@
 "use client"
 
 import React from 'react'
-import { IoMdQuote } from "react-icons/io";
+
+import Image from 'next/image';
+
 import { carouselImgs } from "@/app/lib/data/data";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Scrollbar, A11y, Autoplay } from 'swiper/modules';
-
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
-import Image from 'next/image';
 
 export default function CarouselImgs() {
     return (

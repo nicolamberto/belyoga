@@ -64,7 +64,7 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Contact />
-        <div className="sticky z-50 bottom-0 right-0 p-2 rounded-full flex justify-end">
+        <div className="sticky z-20 bottom-0 right-0 p-2 rounded-full flex justify-end">
           <Link
             href={'https://api.whatsapp.com/send?phone=5493518522977&text=Hola!%20Quiero%20averiguar%20mas%20sobre%20yoga!%20Mi%20nombre%20es:%20'}
             target="_blank"

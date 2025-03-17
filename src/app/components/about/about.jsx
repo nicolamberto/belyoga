@@ -5,19 +5,17 @@ import React from 'react'
 import sobremi from '@/app/lib/aboutmebel.png'
 import trayectoria from '@/app/lib/trayectoria.png'
 
-import { aboutSquares } from '@/app/lib/data/data';
-
 import Image from 'next/image'
 
 import { motion } from 'framer-motion';
 import { tanpearl } from '@/app/layout';
+import DividerAbout from '../divider/dividerabout';
+
 const MotionImage = motion(Image)
-
-
 
 export default function About() {
   return (
-    <div id='about' className=' flex flex-col justify-center items-center pt-20 md:pt-32 px-7 xl:px-0'>
+    <div id='about' className=' flex flex-col justify-center items-center pt-10 md:pt-20 px-7 xl:px-0'>
 
 
       {/* <p className='text-5xl text-gray-800'>SOBRE MI</p> */}
@@ -42,7 +40,7 @@ export default function About() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className='text-[30px] lg:text-[40px] xl:text-[50px] text-[#033908] font-bold'>
+            className={`text-[30px] lg:text-[40px] xl:text-[50px] text-[#033908] font-bold ${tanpearl.className}`}>
             Sobre MI
           </motion.p>
 
@@ -53,7 +51,7 @@ export default function About() {
             viewport={{ once: true }}
             className=' flex flex-col ml-2'>
 
-            <h2 className={`sm:text-[15px] lg:text-[20px] xl:text-[25px] text-[#033908] ${tanpearl.className}`}>Belén Sánchez</h2>
+            <h2 className={`sm:text-[15px] lg:text-[20px] xl:text-[25px] text-[#033908]`}>Belén Sánchez</h2>
 
             <div
 
@@ -71,29 +69,8 @@ export default function About() {
         </div>
 
       </div>
-      <div className=' grid grid-cols-2 sm:grid-cols-4 justify-items-center gap-20 sm:gap-0 w-[50%] sm:w-[80%] md:w-[70%] lg:w-[85%] xl:w-[60%] py-10 sm:py-20'>
-        {aboutSquares.map((item, index) => (
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.1 }}
-            key={index}
-            className='w-32 h-32 sm:w-32 sm:h-32 lg:w-44 lg:h-44 xl:w-44 xl:h-44 bg-[#79956c] bg-opacity-25 transition shadow-md rounded-3xl flex flex-col justify-center items-center gap-0 relative'>
-
-            <MotionImage
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.1 * index }}
-              src={item.icon}
-              width={60}
-              alt='img'
-              className='text-[#033908] absolute -top-7'
-            />
-            <p className='w-[80%] text-center text-[7px] sm:text-[9px] md:text-[10px] lg:text-[13px] xl:text-[15px] text-[#033908]'>la mejor yoga pa asegurada</p>
-          </motion.div>
-        ))}
+      <div className='w-full'>
+       <DividerAbout/>
       </div>
 
       <div className='flex flex-row-reverse justify-center items-center rounded-br-[120px] z-30 bg-opacity-25  w-[100%] xl:w-[80%]'>
