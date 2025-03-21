@@ -13,22 +13,21 @@ export const navbar = [
         link: '/yogaconvencional'
     },
     {
-        title: 'YOGA HOLISTICA',
+        title: 'EXPERIENCIAS HOLISTICAS',
         link: '/yogaholistica'
     },
     {
         title: 'YOGA EMPRESARIAL',
         link: '/yogaempresarial'
     },
-    {
-        title: 'CONTACTO',
-        link: '#'
-    }
 ]
 
-import banner1hero from '@/app/lib/banners/desktop/bannerdesktop1.png'
-import banner2hero from '@/app/lib/banners/desktop/bannerdsktop2.png'
-import banner3hero from '@/app/lib/banners/desktop/bannerdesktop3.png'
+import banner1hero from '@/app/lib/banners/desktop/bannerfinal1.jpg'
+import banner2hero from '@/app/lib/banners/desktop/bannerfinal2.jpg'
+import banner3hero from '@/app/lib/banners/desktop/bannerfinal3.jpg'
+
+import prueba from '@/app/lib/banners/desktop/bannerdesktop3mejorado.png'
+
 
 export const carouselHeroSectionDesktop = [
     {
@@ -45,9 +44,10 @@ export const carouselHeroSectionDesktop = [
     },
 ]
 
-import banner1heromobile from '@/app/lib/banners/mobile/bannermobile1.png'
-import banner2heromobile from '@/app/lib/banners/mobile/bannermobile2.png'
-import banner3heromobile from '@/app/lib/banners/mobile/bannermobile3.png'
+import banner1heromobile from '@/app/lib/banners/mobile/bannermobile1.jpg'
+import banner2heromobile from '@/app/lib/banners/mobile/bannermobile2.jpg'
+import banner3heromobile from '@/app/lib/banners/mobile/bannermobile3.jpg'
+
 
 export const carouselHeroSectionMobile = [
     {
@@ -70,18 +70,6 @@ export const socialMediaHero = [
     {
         name: 'instagram',
         icon: <FaInstagram />
-    },
-    {
-        name: 'facebook',
-        icon: <FaFacebook />
-    },
-    {
-        name: 'linkedin',
-        icon: <FaLinkedin />
-    },
-    {
-        name: 'twitter',
-        icon: <FaTwitter />
     },
 ]
 
@@ -166,25 +154,37 @@ export const yogaholistica = [
 
 export const yogaholisticasub = [
     {
-        nombre: 'YOGA Y NATURALEZA: RECONEXION EN ESCENARIOS AUTENTICOS',
-        descripcion: 'Sesiones de yoga al aire libre en lugares emblemáticos de Córdoba como el Valle de Calamuchita, las Sierras Chicas o el Parque Nacional Quebrada del Condorito',
+        name: 'YOGA Y NATURALEZA',
+        subtitle: 'Reconexión en escenarios autenticos.',
+        descripcion: 'Descubre una experiencia única donde el yoga y las prácticas holísticas se fusionan para equilibrar cuerpo, mente y espíritu. A través de sesiones en escenarios naturales y espacios de calma, te invito a reconectar con tu esencia, liberar tensiones y expandir tu energía. Desde clases de yoga personalizadas hasta encuentros grupales con meditación guiada, cuencos tibetanos y aromaterapia, cada propuesta está diseñada para generar bienestar profundo y duradero.',
+
         img: '',
-        descripcion2: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cum quam sit ratione placeat temporibus quidem unde, exercitationem quod debitis.lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cum quam sit ratione placeat temporibus quidem unde, exercitationem quod debitis.lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cum quam sit ratione placeat temporibus quidem unde, exercitationem quod debitis.',
+        descripcion2: 'Explora un camino de transformación con actividades que integran el movimiento consciente, la respiración y la conexión con la naturaleza. Caminatas meditativas, talleres sensoriales y prácticas energéticas te permitirán sumergirte en un viaje de autoconocimiento y sanación. Sea que busques relajación, equilibrio emocional o simplemente un momento de paz, este espacio está abierto para vos. 🌿✨',
         id: 1
     },
     {
-        nombre: 'CEREMONIAS DE CACAO: TRADICION Y SANACION EN CORDOBA',
-        descripcion: 'Ceremonias inspiradas en la cosmovisión indígena que integran el cacao ceremonial con música, danza y conexión grupal. Se utilizará cacao orgánico producido de manera ética, complementado con hierbas locales como peperina y palo santo',
+        name: 'CEREMONIAS DE CACAO',
+        subtitle: 'Tradición y sanación en Córdoba.',
+        descripcion: 'Honrá la tradición ancestral del cacao en un espacio de introspección y conexión grupal. A través de música, danza y meditación guiada, estas ceremonias invitan a abrir el corazón y liberar emociones en entornos naturales y estancias históricas de las sierras.',
         img: '',
-        descripcion2: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cum quam sit ratione placeat temporibus quidem unde, exercitationem quod debitis.lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cum quam sit ratione placeat temporibus quidem unde, exercitationem quod debitis.lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cum quam sit ratione placeat temporibus quidem unde, exercitationem quod debitis.',
+        descripcion2: 'El cacao orgánico, combinado con hierbas locales como la peperina y el palo santo, potencia la sensibilidad y la expansión de la conciencia. Un momento sagrado para reconectar con vos mismo y con la energía sanadora de la comunidad. 🍫✨',
         id: 2
     },
     {
-        nombre: 'EXPERIENCIAS SENSORIALES DE BIENESTAR',
-        descripcion: 'Circuitos holísticos que combinan actividades como yoga, mindfulness y tratamientos de spa con productos locales.',
+        name: 'EXPERIENCIAS SENSORIALES',
+        subtitle: 'Bienestar a Través de los Sentidos',
+        descripcion: 'Sumergite en un circuito holístico diseñado para relajar el cuerpo, calmar la mente y armonizar la energía. Desde sesiones de yoga y meditación junto a los ríos serranos hasta masajes terapéuticos con aceites esenciales locales, cada experiencia invita a una conexión profunda con el entorno y con vos mismo.',
         img: '',
-        descripcion2: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cum quam sit ratione placeat temporibus quidem unde, exercitationem quod debitis.lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cum quam sit ratione placeat temporibus quidem unde, exercitationem quod debitis.lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cum quam sit ratione placeat temporibus quidem unde, exercitationem quod debitis.',
+        descripcion2: 'Explorá el poder del breathwork y la relajación guiada, potenciados con aromaterapia artesanal. Estas propuestas únicas combinan la sabiduría del bienestar con la magia de la naturaleza, ofreciéndote un espacio de descanso, renovación y equilibrio. ✨🌿💆‍♀️',
         id: 3
+    },
+    {
+        name: 'YOGA Y VINO',
+        subtitle: 'Equilibrio, Naturaleza y Sabores de Córdoba',
+        descripcion: 'Disfrutá de una experiencia única que fusiona el bienestar del yoga con el arte de la degustación. En escenarios naturales rodeados de viñedos, conectá con tu cuerpo a través de una práctica consciente al aire libre y luego dejate llevar por los aromas y sabores de los vinos cordobeses.',
+        img: '',
+        descripcion2: 'Más que una combinación, Yoga & Vino es un encuentro sensorial que celebra la armonía entre movimiento, naturaleza y cultura local. Una invitación a relajarte, disfrutar y vivir el presente con cada respiración y cada copa. 🍷🧘‍♀️✨',
+        id: 4
     }
 ]
 
@@ -285,6 +285,10 @@ export const carouselImgs = [
         alt: 'alt3'
     },
     {
+        img: carouselimgs1,
+        alt: 'alt1'
+    },
+    {
         img: carouselimgs5,
         alt: 'alt5'
     },
@@ -292,14 +296,7 @@ export const carouselImgs = [
         img: carouselimgs6,
         alt: 'alt6'
     },
-    {
-        img: carouselimgs6,
-        alt: 'alt7'
-    },
-    {
-        img: carouselimgs6,
-        alt: 'alt8'
-    },
+
 ]
 
 
@@ -356,16 +353,100 @@ export const dividerItems = [
 ]
 
 
-export const yogaNidra = 
+export const yogaNidra =
+{
+    title: 'Yoga Nidra y Meditacion',
+    subtitle: 'Yoga Nidra y Meditación: un refugio para el alma',
+    introtext: 'En el ritmo acelerado de la vida moderna, encontrar momentos para pausar, respirar y simplemente ser se ha vuelto esencial. Yoga Nidra y la meditación son puertas hacia ese espacio interno de calma y regeneración, donde podemos reconectar con nuestra esencia más profunda.',
+    subtitle2: '¿Qué es el Yoga Nidra?',
+    text1: 'Conocido como el "sueño consciente", Yoga Nidra es una práctica guiada que te lleva a un estado profundo de relajación física, mental y emocional. Durante la sesión, te recuestas cómodamente mientras, a través de una serie de instrucciones, viajas hacia un lugar de descanso absoluto. No es solo relajación, es un proceso transformador que activa el poder de tu subconsciente y te ayuda a liberar tensiones, estrés acumulado y patrones limitantes.',
+    subtitle3: '¿Y la meditación?',
+    text2: 'La meditación es el arte de habitar el presente. Lejos de ser un esfuerzo por “vaciar la mente”, es una práctica que nos invita a observar nuestros pensamientos, emociones y sensaciones sin juicio. Es un camino hacia la claridad mental, el equilibrio emocional y una conexión más consciente con la vida.',
+    subtitle4: '¿Qué puedes esperar de nuestras sesiones?',
+    text3: 'En nuestras clases de Yoga Nidra y meditación, te ofrecemos un espacio cálido y seguro donde puedes desconectar del ruido externo y abrazar el silencio interno. Cada sesión está diseñada para que, a través de la respiración, la visualización y la presencia, encuentres un refugio dentro de ti.',
+    text4: 'No necesitas experiencia previa, ni una mente "perfecta". Solo ven tal como eres, con la intención de regalarte un momento para ti. Aquí, cada respiración cuenta y cada instante es una oportunidad para descubrir el poder transformador de estar presente.',
+}
+
+
+
+export const endSectionHolistica = [
     {
-        title: 'Yoga Nidra y Meditacion',
-        subtitle: 'Yoga Nidra y Meditación: un refugio para el alma',
-        introtext: 'En el ritmo acelerado de la vida moderna, encontrar momentos para pausar, respirar y simplemente ser se ha vuelto esencial. Yoga Nidra y la meditación son puertas hacia ese espacio interno de calma y regeneración, donde podemos reconectar con nuestra esencia más profunda.',
-        subtitle2: '¿Qué es el Yoga Nidra?',
-        text1: 'Conocido como el "sueño consciente", Yoga Nidra es una práctica guiada que te lleva a un estado profundo de relajación física, mental y emocional. Durante la sesión, te recuestas cómodamente mientras, a través de una serie de instrucciones, viajas hacia un lugar de descanso absoluto. No es solo relajación, es un proceso transformador que activa el poder de tu subconsciente y te ayuda a liberar tensiones, estrés acumulado y patrones limitantes.',
-        subtitle3: '¿Y la meditación?',
-        text2:'La meditación es el arte de habitar el presente. Lejos de ser un esfuerzo por “vaciar la mente”, es una práctica que nos invita a observar nuestros pensamientos, emociones y sensaciones sin juicio. Es un camino hacia la claridad mental, el equilibrio emocional y una conexión más consciente con la vida.',
-        subtitle4:'¿Qué puedes esperar de nuestras sesiones?',
-        text3:'En nuestras clases de Yoga Nidra y meditación, te ofrecemos un espacio cálido y seguro donde puedes desconectar del ruido externo y abrazar el silencio interno. Cada sesión está diseñada para que, a través de la respiración, la visualización y la presencia, encuentres un refugio dentro de ti.',
-        text4:'No necesitas experiencia previa, ni una mente "perfecta". Solo ven tal como eres, con la intención de regalarte un momento para ti. Aquí, cada respiración cuenta y cada instante es una oportunidad para descubrir el poder transformador de estar presente.',
-    }
+    
+        name: 'Productos Locales y Merchandising Consciente',
+        prods: [
+            {
+                name: 'Aromaterapia de Córdoba:',
+                descripcion: 'Velas, aceites esenciales y sprays energizantes elaborados con plantas locales como lavanda, peperina y romero, creando una conexión auténtica con la naturaleza. Perfectos como souvenirs exclusivos o complementos para experiencias turísticas, estos productos invitan a disfrutar del bienestar a través de los aromas de la región. 🌿✨'
+            },
+            {
+                name: 'Kits de Bienestar para Visitantes:',
+                descripcion: 'Mini cuencos tibetanos, bolsas de infusiones locales, piedras energéticas de cuarzo extraídas de la región y productos de autocuidado como bálsamos o cremas elaboradas por artesanos locales.'
+            },
+            {
+                name: 'Cacao Ceremonial y Hierbas Medicinales:',
+                descripcion: 'Crear alianzas con productores éticos para ofrecer cacao ceremonial y hierbas autóctonas como parte de las ceremonias y para la venta en mercados turísticos.'
+            },
+        ]
+    },
+    {
+    
+        name: 'Propuesta de Valor para el Turismo de Córdoba',
+        prods: [
+            {
+                name: 'Córdoba como Destino Holístico:',
+                descripcion: ' Posicionar la provincia como un referente en turismo de bienestar, destacando su riqueza natural y cultural.'
+            },
+            {
+                name: 'Sostenibilidad y Comunidad:',
+                descripcion: 'Fomentar el desarrollo local integrando productores y artesanos en cada experiencia.'
+            },
+            {
+                name: 'Raíces y Tradición:',
+                descripcion: 'Crear actividades auténticas que celebren la identidad cordobesa a través de su música, gastronomía y costumbres ancestrales.'
+            },
+        ]
+    },
+    {
+    
+        name: 'Propuesta para la Implementación',
+        prods: [
+            {
+                name: 'Retiros de Bienestar por Temporada:',
+                descripcion: 'Durante primavera y verano, se organizarán eventos holísticos en escenarios únicos como estancias históricas, termas y reservas naturales, ofreciendo experiencias de relajación y conexión con la naturaleza.'
+            },
+            {
+                name: 'Alianzas con el Sector Turístico Local:',
+                descripcion: 'Se trabajará en conjunto con hoteles, posadas y operadores turísticos para integrar estas experiencias en sus paquetes, además de capacitar a guías y anfitriones en prácticas de bienestar.'
+            },
+            {
+                name: 'Difusión y Promoción:',
+                descripcion: 'A través de campañas en redes sociales bajo el lema Córdoba, destino de bienestar y merchandising exclusivo, se buscará posicionar la provincia como un referente en turismo holístico.'
+            },
+        ]
+    },
+        
+    
+]
+
+
+import logoempresarial1 from '@/app/lib/logoempresarial1.png'
+import logoempresarial2 from '@/app/lib/logoempresarial2.png'
+import logoempresarial3 from '@/app/lib/logoempresarial3.png'
+
+export const beneficiosempresarial = [
+    {
+        title:'Reducción del estrés y el ausentismo',
+        text:'Las actividades de bienestar ayudan a disminuir la tensión emocional y física, reduciendo el agotamiento y favoreciendo la asistencia y el compromiso de los colaboradores.',
+        logo:logoempresarial1
+    },
+    {
+        title:'Mejora del clima laboral y la productividad',
+        text:'Un equipo relajado y motivado trabaja con mayor eficiencia, mejorando el ambiente de trabajo y optimizando el rendimiento general de la empresa.',
+        logo:logoempresarial2
+    },
+    {
+        title:'Fortalecimiento del trabajo en equipo y la creatividad',
+        text:'Las dinámicas grupales promueven la confianza, la colaboración y la comunicación, impulsando la innovación y el desarrollo de nuevas ideas.',
+        logo:logoempresarial3
+    },
+]

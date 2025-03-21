@@ -105,7 +105,7 @@ export default function Header() {
                             }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0, transition: { delay: 0.2 } }}
-                            className="fixed inset-0 z-10 bg-black/20 backdrop-blur-md flex flex-col justify-center space-y-5 items-center"
+                            className="fixed inset-0 z-10 bg-[#033908]/80 backdrop-blur-md flex flex-col justify-center space-y-5 items-center"
                         >
                             {navbar.map((item, index) => (
                                 <MotionLink
@@ -119,7 +119,7 @@ export default function Header() {
                                     }}
                                     key={item.title}
                                     href={item.link}
-                                    className='text-[#033908] font-semibold'
+                                    className='text-[#f5ebe0] font-semibold'
                                     onClick={() => setIsMobileNavOpen(false)}
                                 >
                                     {item.title}

@@ -10,18 +10,21 @@ import Image from 'next/image'
 import { motion } from 'framer-motion';
 import { tanpearl } from '@/app/layout';
 import DividerAbout from '../divider/dividerabout';
+import divisor1 from '@/app/lib/divisores/desktop/divisorweb.jpg'
+import divisormobile from '@/app/lib/divisores/mobile/divisormobile1.png'
+import DividerMobile from '../divider/dividermobile'
 
 const MotionImage = motion(Image)
 
 export default function About() {
   return (
-    <div id='about' className=' flex flex-col justify-center items-center pt-10 md:pt-20 px-7 xl:px-0'>
+    <div id='about' className=' flex flex-col justify-center items-center pt-10 md:pt-20'>
 
 
       {/* <p className='text-5xl text-gray-800'>SOBRE MI</p> */}
-      <div className='flex flex-row justify-center items-center z-30 bg-opacity-25  w-[100%] xl:w-[80%] pb-10'>
+      <div className='flex flex-col justify-center items-center z-30 bg-opacity-25  w-[100%] xl:w-[70%] pb-10 px-7 xl:px-0 '>
 
-        <div className='hidden sm:flex z-30 overflow-visible justify-center items-center'>
+        {/*         <div className='hidden sm:flex z-30 overflow-visible justify-center items-center'>
           <MotionImage
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -33,35 +36,44 @@ export default function About() {
             className='rounded-tl-[140px] rounded-br-[140px]'
           />
 
-        </div>
+        </div> */}
+        <motion.p
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className={`text-[30px] lg:text-[40px] xl:text-[50px] text-[#033908] font-bold pb-5 ${tanpearl.className}`}>
+          Sobre MI
+        </motion.p>
+        <div className='flex flex-col-reverse sm:flex-row items-center sm:items-center gap-5 w-[100%] md:w-[90%] lg:w-[80%]'>
 
-        <div className='flex flex-col items-center sm:items-start gap-5 w-[100%] md:w-[90%] lg:w-[100%]'>
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className={`text-[30px] lg:text-[40px] xl:text-[50px] text-[#033908] font-bold ${tanpearl.className}`}>
-            Sobre MI
-          </motion.p>
+          <div className='flex z-10 overflow-visible justify-center items-center w-[80%] sm:w-full'>
+            <MotionImage
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.2 }}
+              viewport={{ once: true }}
+              src={sobremi}
+              width={500}
+              alt='sobremi'
+              className=''
+            />
 
+          </div>
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.1 }}
             viewport={{ once: true }}
-            className=' flex flex-col ml-2'>
+            className=' flex flex-col justify-center items-center sm:items-start sm:ml-2 w-[100%]'>
 
-            <h2 className={`sm:text-[15px] lg:text-[20px] xl:text-[25px] text-[#033908]`}>Belén Sánchez</h2>
+            <h2 className={`sm:text-[15px] lg:text-[20px] xl:text-[20px] text-[#033908]`}>Belén Sánchez</h2>
 
             <div
-
-              className=' h-[100%] flex flex-col justify-center gap-6 text-[#033908] text-opacity-80 text-justify font-[1px] text-[11px] lg:text-[13px] xl:text-[15px] pt-5'>
-              <p>Soy Bel Sanchez, y mi viaje en el mundo del yoga comenzó hace más de 20 años, cuando aún trabajaba en un exigente cargo administrativo en una importante empresa. En aquel entonces, mis días iniciaban con la práctica de yoga antes de sumergirme en largas jornadas laborales. Esa práctica me ofrecía claridad, enfoque y energía, convirtiéndose en un refugio de bienestar en medio de la rutina.
+              className=' h-[100%] w-full flex flex-col justify-center items-center gap-6 text-[#033908] text-opacity-80 text-justify font-[1px] text-[11px] lg:text-[13px] xl:text-[15px] pt-5'>
+              <p>Hace más de 20 años, mientras trabajaba en un exigente cargo administrativo, descubrí en el yoga un refugio de claridad y bienestar. Sin embargo, una enfermedad marcó un punto de inflexión en mi vida, llevándome a replantear mis prioridades y abrazar el yoga como una verdadera filosofía de vida.
               </p>
-              <p>La vida, como suele hacerlo, me presentó un desafío inesperado: atravesé una enfermedad que marcó un antes y un después en mi camino. Este momento de introspección me llevó a replantear mis prioridades, profundizar en mi autoconocimiento y, finalmente, enamorarme del yoga como filosofía de vida.
+              <p>Desde entonces, se ha convertido en mi mayor maestro y pasión. No solo lo practico, sino que lo estudio en profundidad, encontrando en él un camino de transformación, unión y plenitud entre el cuerpo, la mente y el alma.
               </p>
-              <p>Desde entonces, el yoga ha sido mi gran maestro, mi pasión y mi guía. Me dedico no solo a practicarlo, sino también a estudiarlo en todas sus formas y métodos, descubriendo en él una fuente inagotable de unión, comunión y transformación. Para mí, el yoga es un puente entre el cuerpo, la mente y el alma, un camino hacia el autoconocimiento y la plenitud.</p>
-
             </div>
           </motion.div>
 
@@ -70,10 +82,11 @@ export default function About() {
 
       </div>
       <div className='w-full'>
-       <DividerAbout/>
+        <DividerAbout img={divisor1} text={'Encuentra tu paz con el Yoga'} text2={'Conectate con tu cuerpo y mente.'} py={'py-28'} />
+        <DividerMobile img={divisormobile} text={'"Enseñar no es un arte mecánico, sino un arte del corazón."'} autor={' B.K.S. Iyengar'} py={'py-10'} />
       </div>
 
-      <div className='flex flex-row-reverse justify-center items-center rounded-br-[120px] z-30 bg-opacity-25  w-[100%] xl:w-[80%]'>
+      <div className='flex flex-row-reverse justify-center items-start rounded-br-[120px] z-30 bg-opacity-25  w-[100%] xl:w-[60%] px-7 xl:px-0'>
 
         <div className='hidden lg:flex z-30 overflow-visible justify-center items-center'>
           <MotionImage
@@ -84,12 +97,12 @@ export default function About() {
             src={trayectoria}
             width={500}
             alt='sobremi'
-            className='rounded-tl-[140px] rounded-br-[140px]'
+            className='rounded-tl-[140px] rounded-br-[140px] pt-20'
           />
 
         </div>
 
-        <div className='flex flex-col items-center lg:items-start gap-5 w-[100%] md:w-[90%] lg:w-[100%] pb-20'>
+        <div className='flex flex-col items-center gap-5 w-[100%] md:w-[90%] lg:w-[100%] pb-20'>
           <motion.p
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -105,7 +118,7 @@ export default function About() {
               viewport={{ once: true }}
               className='h-[100%] flex flex-col justify-center gap-6 text-[#033908] text-opacity-80 text-justify font-[1px] text-[11px] lg:text-[13px] xl:text-[15px] pt-5'>
 
-              <p>A lo largo de los años, he profundizado mi aprendizaje con reconocidos maestros y escuelas internacionales, adquiriendo herramientas valiosas para compartir esta disciplina con otras personas:</p>
+              <p>A lo largo de los años, me he formado con reconocidos maestros y escuelas internacionales, adquiriendo herramientas valiosas para compartir el yoga de manera integral y personalizada.</p>
               <ul className=' flex flex-col gap-4 list-disc pl-5 lg:pl-10 font-[1px] text-[11px] lg:text-[13px] xl:text-[15px]'>
                 <li>Especialización en Yogaterapia y Ayurveda.</li>
                 <li>Talleres y coaching a cargo de la Escuela de Yoga Clásico y Científico Arturo García.</li>
@@ -120,10 +133,10 @@ export default function About() {
                 <li>Especialización en Yoga Prenatal.</li>
                 <li>Especialización en Yoga para niños y adolescentes.</li>
               </ul>
-              <p>Mi misión es transmitir los innumerables beneficios del yoga desde un enfoque integral, adaptado a las necesidades de cada persona. Mi mayor satisfacción es acompañar a otros en su camino hacia el bienestar, ayudándoles a descubrir su propio potencial y alcanzar una vida más consciente y plena.</p>
-              <p>Hoy, más que nunca, estoy comprometida con la idea de que el yoga puede transformar vidas, tal como lo hizo con la mía. Mi propósito es crear espacios de conexión y crecimiento, donde cada persona pueda encontrar su equilibrio y despertar su verdadera esencia.
+              <p>Mi propósito es transmitir los beneficios del yoga y acompañar a cada persona en su camino hacia el bienestar, ayudándole a descubrir su potencial y vivir con mayor conciencia. Te invito a ser parte de esta transformación.</p>
+              {/*               <p>Hoy, más que nunca, estoy comprometida con la idea de que el yoga puede transformar vidas, tal como lo hizo con la mía. Mi propósito es crear espacios de conexión y crecimiento, donde cada persona pueda encontrar su equilibrio y despertar su verdadera esencia.
                 Te invito a ser parte de este camino y a descubrir juntos el poder del yoga como herramienta de bienestar y transformación.
-              </p>
+              </p> */}
 
             </motion.div>
           </div>

@@ -27,8 +27,8 @@ export function EmblaCarouselMobile() {
                             src={item.img}
                             quality={true}
                             alt={item.name}
-                            className=' w-full'
-
+                            className=' w-full rounded-[20px]'
+                      
 
                         />
                     </div>

@@ -7,9 +7,10 @@ import Image from 'next/image';
 import { carouselImgs } from "@/app/lib/data/data";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Scrollbar, A11y, Autoplay } from 'swiper/modules';
+import { Scrollbar, A11y, Autoplay, FreeMode } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import "swiper/css/free-mode";
 import 'swiper/css/autoplay';
 
 export default function CarouselImgs() {
@@ -19,13 +20,17 @@ export default function CarouselImgs() {
             <div className='2xl:max-w-[1736px] w-[100%] py-10 flex'>
                 <Swiper
                     // install Swiper modules
-                    modules={[Scrollbar, A11y, Autoplay]}
-                    spaceBetween={40}
+                    modules={[Scrollbar, A11y, Autoplay, FreeMode]}
+                    spaceBetween={0}
                     slidesPerView={5}
+                    freeMode={true}
                     loop={true}
+                    allowTouchMove={false}
                     autoplay={{
-                        delay: 1000
+                        delay: 0,
+                        
                     }}
+                    speed={3000}
                     breakpoints={{
                         0: {
                             slidesPerView: 1,
@@ -59,7 +64,7 @@ export default function CarouselImgs() {
                                     <Image
                                         src={item.img}
                                         width={600}
-                                        className='object-cover overflow-hidden rounded-[10px] h-[300px]'
+                                        className='object-cover overflow-hidden rounded-[50px] h-[300px] p-2'
                                     />
                                 </div>
 

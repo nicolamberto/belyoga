@@ -12,20 +12,20 @@ const MotionImage = motion(Image)
 
 export default function YogaNidra() {
     return (
-        <div className="flex flex-col justify-center items-center gap-0">
+        <div className="flex flex-col justify-center items-center gap-0 pt-10 pb-36">
             <div className="pb-10 md:pb-0">
                 <motion.p
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className={`text-[25px] xl:text-[35px] pb-0 text-[#033908] font-bold ${tanpearl.className}`}
+                    className={`text-[25px] xl:text-[35px] pb-0 text-[#033908] font-bold text-center ${tanpearl.className}`}
                 >
                     {yogaNidra.title}
                 </motion.p>
                 <motion.p
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
-                    className='text-[8px] text-end'>
+                    className='text-[8px] text-center sm:text-end'>
                     {yogaNidra.subtitle}
                 </motion.p>
             </div>
@@ -80,11 +80,6 @@ export default function YogaNidra() {
                 </div>
 
             </motion.div>
-
-
-            <div className="w-full pt-28">
-                <CallToAction />
-            </div>
 
 
         </div>

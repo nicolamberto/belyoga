@@ -13,7 +13,7 @@ import { socialMediaHero } from '@/app/lib/data/data';
 
 export function EmblaCarousel() {
     const [emblaRef] = useEmblaCarousel({ loop: true }, [
-        Autoplay({ delay: 2000 })
+        Autoplay({ delay: 5000 })
     ])
 
     return (
@@ -27,7 +27,7 @@ export function EmblaCarousel() {
                             quality={true}
                             alt={item.name}
 
-                            className='object-fill overflow-hidden'
+                            className='object-fill overflow-hidden rounded-[20px]'
 
                         />
                  

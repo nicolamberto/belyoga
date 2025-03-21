@@ -8,7 +8,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import whatsapp from '@/app/lib/whatsappicon.png'
 import Image from "next/image";
 import Link from "next/link";
-import logo from '@/app/lib/logo.png'
+import logo from '@/app/favicon.ico'
 
 
 const geistSans = Geist({
@@ -53,18 +53,18 @@ const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
+{/*       <head>
         <link rel="icon" href={logo} />
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
-      </head>
+      </head> */}
       <body
         className={`${tanaegean.className} antialiased bg-[#f5ebe0] bg-opacity-60 relative`}
       >
         <Header />
         {children}
         <Contact />
-        <div className="sticky z-20 bottom-0 right-0 p-2 rounded-full flex justify-end">
+        <div className="sticky z-30 bottom-0 right-0 p-2 rounded-full flex justify-end">
           <Link
             href={'https://api.whatsapp.com/send?phone=5493518522977&text=Hola!%20Quiero%20averiguar%20mas%20sobre%20yoga!%20Mi%20nombre%20es:%20'}
             target="_blank"

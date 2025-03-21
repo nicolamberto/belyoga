@@ -38,10 +38,10 @@ export default function ContainerIntroClases({ name, text1, text2, text3, text4 
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ delay: 0.3 }}
-                    className='flex flex-row justify-between items-center pt-5 md:pt-10 lg:pt-20 pb-5 w-[100%] sm:w-[80%] text-[#033908] text-opacity-80 text-justify font-[1px] text-[11px] lg:text-[13px] xl:text-[15px]'>
+                    className='flex flex-row justify-between items-center pt-5 md:pt-10 lg:pt-20 pb-0 w-[100%] sm:w-[80%] text-[#033908] text-opacity-80 text-justify font-[1px] text-[11px] lg:text-[13px] xl:text-[15px]'>
 
                     <div className="">
-                        <p className=' font-bold underline pb-2 under text-center sm:text-start'>CLASES PRESENCIALES</p>
+                        <p className=' font-bold underline pb-0 under text-center sm:text-start'>CLASES PRESENCIALES</p>
                         <ul className='flex flex-col gap-2 list-disc px-7 text-center sm:text-start '>
                             <li>Lunes</li>
                             <li>Miercoles</li>
@@ -50,7 +50,7 @@ export default function ContainerIntroClases({ name, text1, text2, text3, text4 
                     </div>
 
                     <div className="">
-                        <p className=' font-bold underline pb-2 under text-center sm:text-start '>CLASES VIRTUALES</p>
+                        <p className=' font-bold underline pb-0 under text-center sm:text-start '>CLASES VIRTUALES</p>
                         <ul className='flex flex-col gap-2 list-disc px-7 text-center  sm:text-start'>
                             <li>Lunes</li>
                             <li>Miercoles</li>
@@ -59,7 +59,7 @@ export default function ContainerIntroClases({ name, text1, text2, text3, text4 
                     </div>
 
                     <div className="">
-                        <p className=' font-bold underline pb-2 under text-center sm:text-start '>CLASES COMBINADAS</p>
+                        <p className=' font-bold underline pb-0 under text-center sm:text-start '>CLASES COMBINADAS</p>
                         <ul className='flex flex-col gap-2 list-disc px-7 text-center sm:text-start '>
                             <li>Lunes</li>
                             <li>Miercoles</li>

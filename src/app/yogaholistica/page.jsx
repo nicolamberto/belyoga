@@ -1,55 +1,29 @@
 "use client"
 
 import React, { useState } from 'react'
-import Card from '../components/clases/card'
-import { yogaholisticasub, yogaholistica } from '@/app/lib/data/data'
-import IntroClases from '../components/clases/introclases'
+import EmblaCarouselPropuestas from './components/propuestas/propuestas/EmblaCarouselPropuestas'
+import IntroPropuestas from './components/intropropuestas'
+import DividerAbout from '../components/divider/dividerabout'
+import DividerMobile from '../components/divider/dividermobile'
+import divisor2 from '@/app/lib/divisores/desktop/divisorweb2.jpg'
+import divisormobile from '@/app/lib/divisores/mobile/divisormobile2.png'
+import EndSection from './components/endsection'
+import BannerHolistica from './components/bannerholistica'
+
 
 
 export default function Clases() {
 
-  const [expandedCard, setExpandedCard] = useState(null)
-
-  const handleCardClick = (id) => {
-    setExpandedCard(expandedCard === id ? null : id)
-  }
-
-
   return (
-    <div className="w-[100%] flex justify-center items-center ">
-
-      <div className=' z-10 flex flex-col justify-center items-center w-[60%] py-20'>
-        {yogaholistica.map(item => (
-          <IntroClases 
-          key={item.title} 
-          title={item.title}
-          subtitle={item.subtitle}
-          text1={item.text1}
-          text2={item.text2}
-          img={item.img}
-          />
-        ))}
-
-
-
-        {/* <p className=' text-4xl text-gray-800'>NUESTRAS CLASES</p> */}
-        <div className='flex flex-col justify-center items-center gap-10 w-[100%]'>
-          {yogaholisticasub.map(item => (
-            <Card
-              key={item.id}
-              id={item.id}
-              title={item.nombre}
-              description={item.descripcion}
-              img={item.img}
-              description2={item.descripcion2}
-              onClick={handleCardClick}
-              isExpanded={expandedCard === item.id}
-            />
-          ))}
-        </div>
-
-
+    <div className="w-[100%] flex flex-col justify-center items-center gap-10 pb-36 sm:">
+      <BannerHolistica/>
+      <IntroPropuestas />
+      <EmblaCarouselPropuestas />
+      <div className='w-full'>
+        <DividerAbout img={divisor2} text={'Encuentra tu paz con el Yoga'} text2={'Conectate con tu cuerpo y mente.'} py={'py-10'} />
+        <DividerMobile img={divisormobile} text={'"Enseñar no es un arte mecánico, sino un arte del corazón."'} autor={' B.K.S. Iyengar'} py={'sm:py-10'} />
       </div>
+      <EndSection/>
     </div>
 
   )
