@@ -51,7 +51,7 @@ const EmblaCarouselClases = () => {
     }, [emblaMainApi, onSelect])
 
     return (
-        <div className="w-full pt-0 md:pt-0 2xl:pb-0">
+        <div className="w-full pt-5">
 
             <div className="embla flex justify-center items-center flex-col pt-0 w-[100%] xl:w-[80%]">
 
@@ -62,13 +62,14 @@ const EmblaCarouselClases = () => {
                     <div className="embla__container w-full ">
                         {yogaConvencional.map((item, index) => (
 
-                            <div className="embla__slide" >
+                            <div key={index} className="embla__slide" >
 
                                 <div className="embla-thumbs__viewport" ref={emblaThumbsRef}>
 
                                     <div className="embla-thumbs__container flex flex-col sm:flex-row justify-center gap-0 sm:gap-10 items-center pb-5 sm:pb-10">
                                         {yogaConvencional.map((item, index) => (
                                             <motion.div
+                                                key={index}
                                                 initial={{ y: -5, opacity: 0 }}
                                                 whileInView={{ y: 0, opacity: 1 }}
                                                 transition={{

@@ -22,8 +22,8 @@ export function EmblaCarousel() {
         <div className="embla" ref={emblaRef}>
             <div className="embla__container">
 
-                {carouselHeroSectionDesktop.map(item => (
-                    <div key={item.name} className="embla__slide items-center justify-center relative hidden md:flex w-[100%] ">
+                {carouselHeroSectionDesktop.map((item, index) => (
+                    <div key={index} className="embla__slide items-center justify-center relative hidden md:flex w-[100%] ">
                         <Image
                             src={item.img}
                             quality={true}

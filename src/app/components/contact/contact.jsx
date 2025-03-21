@@ -20,6 +20,7 @@ export default function Contact() {
                     <Image
                         src={mapa}
                         className='rounded-[20px]'
+                        alt='mapa'
                     />
                 </div>
                 <div className='flex flex-col justify-between h-full'>

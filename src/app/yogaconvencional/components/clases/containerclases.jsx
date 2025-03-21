@@ -4,8 +4,6 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { introClases } from '@/app/lib/data/data'
-
 import { motion } from 'framer-motion'
 import { tanpearl } from '@/app/layout'
 

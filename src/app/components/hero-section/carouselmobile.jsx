@@ -23,8 +23,8 @@ export function EmblaCarouselMobile() {
             <div className="embla__container">
 
 
-                {carouselHeroSectionMobile.map(item => (
-                    <div key={item.name} className="embla__slide items-center justify-center relative flex w-[100%]">
+                {carouselHeroSectionMobile.map((item, index) => (
+                    <div key={index} className="embla__slide items-center justify-center relative flex w-[100%]">
                         <Image
                             src={item.img}
                             quality={true}

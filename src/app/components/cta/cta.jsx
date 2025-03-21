@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 export default function CallToAction() {
     return (
-        <div className=' w-full flex flex-col justify-center items-center relative md:py-12 lg:py-40'>
+        <div className=' w-full flex flex-col justify-center items-center relative py-12 lg:py-40'>
             <Image
                 src={divisor}
                 className='absolute pb-40'

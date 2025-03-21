@@ -18,6 +18,7 @@ export default function BeneficiosEmpresarial() {
               <Image
                 src={item.logo}
                 width={100}
+                alt='logo'
               />
             </div>
           </div>

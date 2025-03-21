@@ -15,13 +15,13 @@ import BannerHolistica from './components/bannerholistica'
 export default function Clases() {
 
   return (
-    <div className="w-[100%] flex flex-col justify-center items-center gap-10 pb-36 sm:">
+    <div className="w-[100%] flex flex-col justify-center items-center pb-36 sm:">
       <BannerHolistica/>
       <IntroPropuestas />
       <EmblaCarouselPropuestas />
       <div className='w-full'>
         <DividerAbout img={divisor2} text={'Encuentra tu paz con el Yoga'} text2={'Conectate con tu cuerpo y mente.'} py={'py-10'} />
-        <DividerMobile img={divisormobile} text={'"Enseñar no es un arte mecánico, sino un arte del corazón."'} autor={' B.K.S. Iyengar'} py={'sm:py-10'} />
+        <DividerMobile img={divisormobile} text={'"Enseñar no es un arte mecánico, sino un arte del corazón."'} autor={' B.K.S. Iyengar'} py={'py-10'} />
       </div>
       <EndSection/>
     </div>

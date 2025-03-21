@@ -76,7 +76,7 @@ const EmblaCarouselIntroClases = () => {
                                         {introClases.map((item, index) => (
                                             
                                                 <Thumb
-                                                    key={item.id}
+                                                    key={index}
                                                     onClick={() => onThumbClick(index)}
                                                     selected={index === selectedIndex}
                                                     index={index}

@@ -67,8 +67,6 @@ export default function CarouselImgs() {
                                         className='object-cover overflow-hidden rounded-[50px] h-[300px] p-2'
                                     />
                                 </div>
-
-
                             </SwiperSlide>
 
 

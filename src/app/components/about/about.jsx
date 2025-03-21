@@ -22,7 +22,7 @@ export default function About() {
 
 
       {/* <p className='text-5xl text-gray-800'>SOBRE MI</p> */}
-      <div className='flex flex-col justify-center items-center z-30 bg-opacity-25  w-[100%] xl:w-[70%] pb-10 px-7 xl:px-0 '>
+      <div className='flex flex-col justify-center items-center z-30 bg-opacity-25  w-[100%] xl:w-[70%] px-7 xl:px-0'>
 
         {/*         <div className='hidden sm:flex z-30 overflow-visible justify-center items-center'>
           <MotionImage
@@ -55,7 +55,6 @@ export default function About() {
               src={sobremi}
               width={500}
               alt='sobremi'
-              className=''
             />
 
           </div>

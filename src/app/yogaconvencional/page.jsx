@@ -1,10 +1,6 @@
 "use client"
 
 import React, { useState } from 'react'
-import Card from '../components/clases/card'
-import { yogaconvencional, yogaconvencionalsub } from '@/app/lib/data/data'
-import IntroClases from '../components/clases/introclases'
-import { yogaConvencional } from '@/app/lib/data/data'
 import EmblaCarouselClases from './components/clases/clases/EmblaCarouselClases'
 import YogaNidra from './components/nidra/yoganidra'
 import divisor2 from '@/app/lib/divisores/desktop/divisorweb2.jpg'
@@ -24,7 +20,7 @@ export default function Clases() {
 
   return (
 
-    <div className="w-[100%] flex flex-col justify-center items-center gap-10">
+    <div className="w-[100%] flex flex-col justify-center items-center gap-0">
       <BannerConvencional/>
       <EmblaCarouselClases />
 

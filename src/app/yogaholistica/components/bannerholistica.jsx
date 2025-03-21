@@ -9,10 +9,12 @@ export default function BannerHolistica() {
             <Image
                 src={bannermobile}
                 className='block sm:hidden p-2 rounded-[20px]'
+                alt='bannermobile'
             />
             <Image
                 src={bannerdesktop}
                 className='hidden sm:block p-2 rounded-[20px]'
+                alt='bannerdesktop'
             />
 
         </div>

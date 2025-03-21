@@ -4,7 +4,6 @@ import HeroSection from "./components/hero-section/hero_section/heroSection";
 import About from "./components/about/about";
 import fondo from '@/app/lib/fondo.jpg'
 import Divider from "./components/divider/divider";
-import Clases from "./components/clases/clases/clases";
 import ReviewList from "./components/reviews/reviews/reviewlist";
 import EmblaCarouselClases from "./components/intro-clases/intro-clases/EmblaCarouselClases";
 import IntroYoga from "./components/introyoga/introyoga";

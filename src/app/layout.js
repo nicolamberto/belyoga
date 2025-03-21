@@ -72,6 +72,7 @@ export default function RootLayout({ children }) {
             <Image
               src={whatsapp}
               width={100}
+              alt="wsp"
             />
           </Link>
         </div>

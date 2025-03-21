@@ -7,6 +7,8 @@ import { navbar, socialMediaHero } from '@/app/lib/data/data'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 
+import navbarmobilebg from '@/app/lib/banners/mobile/navbarmobilebg.jpg'
+
 export default function Header() {
 
 
@@ -42,7 +44,7 @@ export default function Header() {
                                     ease: "easeInOut",
                                     delay: 0.3
                                 }}
-                                key={item.title}
+                                key={index}
                                 href={item.link}
                                 className=' text-[7px] lg:text-[10px] relative'
 
@@ -98,35 +100,39 @@ export default function Header() {
                 </button>
 
                 <AnimatePresence>
+
                     {isMobileNavOpen && (
-                        <motion.div
-                            initial={{
-                                opacity: 0,
-                            }}
-                            animate={{ opacity: 1 }}
-                            exit={{ opacity: 0, transition: { delay: 0.2 } }}
-                            className="fixed inset-0 z-10 bg-[#033908]/80 backdrop-blur-md flex flex-col justify-center space-y-5 items-center"
-                        >
-                            {navbar.map((item, index) => (
-                                <MotionLink
-                                    initial={{ y: -10, opacity: 0 }}
-                                    animate={{ y: 0, opacity: 1 }}
-                                    exit={{ y: -10, opacity: 0 }}
-                                    transition={{
-                                        duration: 0.3,
-                                        ease: "easeInOut",
-                                        delay: 0.05 * index,
-                                    }}
-                                    key={item.title}
-                                    href={item.link}
-                                    className='text-[#f5ebe0] font-semibold'
-                                    onClick={() => setIsMobileNavOpen(false)}
-                                >
-                                    {item.title}
-                                </MotionLink>
-                            ))}
-                        </motion.div>
+
+                            <motion.div
+                                initial={{
+                                    opacity: 0,
+                                }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0, transition: { delay: 0.2 } }}
+                                className=" fixed inset-0 z-10 bg-[#033908]/80 backdrop-blur-md flex flex-col justify-center space-y-5 items-center"
+                            >
+                                {navbar.map((item, index) => (
+                                    <MotionLink
+                                        initial={{ y: -10, opacity: 0 }}
+                                        animate={{ y: 0, opacity: 1 }}
+                                        exit={{ y: -10, opacity: 0 }}
+                                        transition={{
+                                            duration: 0.3,
+                                            ease: "easeInOut",
+                                            delay: 0.05 * index,
+                                        }}
+                                        key={index}
+                                        href={item.link}
+                                        className='text-[#f5ebe0] font-semibold'
+                                        onClick={() => setIsMobileNavOpen(false)}
+                                    >
+                                        {item.title}
+                                    </MotionLink>
+                                ))}
+                            </motion.div>
+
                     )}
+
                 </AnimatePresence>
             </div>
         </motion.div>
