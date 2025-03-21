@@ -8,6 +8,8 @@ import Autoplay from 'embla-carousel-autoplay'
 
 import { carouselHeroSectionDesktop, carouselHeroSectionMobile } from '@/app/lib/data/data'
 import { socialMediaHero } from '@/app/lib/data/data';
+import Link from 'next/link'
+import { tanpearl } from '@/app/layout'
 
 
 
@@ -28,9 +30,13 @@ export function EmblaCarouselMobile() {
                             quality={true}
                             alt={item.name}
                             className=' w-full rounded-[20px]'
-                      
+
 
                         />
+                        {item.button && (
+                            <Link href={'/yogaconvencional'} className={`absolute bottom-16 border border-[#033908] bg-[#f5ebe0] tracking-[2px] text-[#033908] text-center rounded-full px-10 py-2 cursor-pointer hover:bg-[#033908] hover:text-[#f5ebe0] transition font-bold ${tanpearl.className} `}>CLASES</Link>
+
+                        )}
                     </div>
                 ))}
 

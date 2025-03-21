@@ -36,11 +36,12 @@ export const carouselHeroSectionDesktop = [
     },
     {
         name: 'alt2',
-        img: banner2hero
+        img: banner3hero,
+        button: true
     },
     {
         name: 'alt3',
-        img: banner3hero
+        img: banner2hero
     },
 ]
 
@@ -52,15 +53,16 @@ import banner3heromobile from '@/app/lib/banners/mobile/bannermobile3.jpg'
 export const carouselHeroSectionMobile = [
     {
         name: 'alt1',
-        img: banner1heromobile
+        img: banner3heromobile
     },
     {
         name: 'alt2',
-        img: banner2heromobile
+        img: banner1heromobile,
+        button: true
     },
     {
         name: 'alt3',
-        img: banner3heromobile
+        img: banner2heromobile
     },
 ]
 

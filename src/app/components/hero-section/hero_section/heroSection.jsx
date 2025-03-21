@@ -15,10 +15,10 @@ import { EmblaCarouselMobile } from '../carouselmobile';
 export default function HeroSection() {
     return (
         <div className='w-full flex justify-center items-center'>
-            <div className='flex justify-center items-center overflow-hidden md:hidden p-2 object-fill'>
+            <div className='flex justify-center items-center overflow-hidden md:hidden object-fill m-2 rounded-[20px]'>
                 <EmblaCarouselMobile />
             </div>
-            <div className='hidden md:flex justify-center items-center overflow-hidden p-2 relative'>
+            <div className='hidden md:flex justify-center items-center overflow-hidden m-2 relative rounded-[20px]'>
                 <EmblaCarousel />
             </div>
         </div>
