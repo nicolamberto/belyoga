@@ -28,7 +28,7 @@ export default function ReviewList() {
                     viewport={{ once: true }}
                     transition={{ delay: 0.2 }}
                     className={`text-[25px] xl:text-[35px] pb-0 sm:pb-5 text-[#033908] font-bold text-center ${tanpearl.className}`}>
-                    ¿Que opinan nuestros ALUMNOS?
+                    ¿Qué opinan nuestros Alumnos?
                 </motion.p>
             </div>
             <Review />

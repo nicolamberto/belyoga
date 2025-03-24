@@ -452,3 +452,86 @@ export const beneficiosempresarial = [
         logo:logoempresarial3
     },
 ]
+
+
+import mindful from '@/app/lib/empresarial/mindful.png'
+import circulo from '@/app/lib/empresarial/circulo.png'
+import taller from '@/app/lib/empresarial/taller.png'
+import bano from '@/app/lib/empresarial/bano.png'
+import dinamica from '@/app/lib/empresarial/dinamica.png'
+import corporativo from '@/app/lib/empresarial/corporativo.png'
+import estiramientos from '@/app/lib/empresarial/estiramientos.png'
+import circuito from '@/app/lib/empresarial/circuito.png'
+
+export const actividadesEmpresarial = [
+    {
+        name:'Mindful Walking & Yoga Corporativo',
+        text:'Duración: 1.5 horas | Sesión de yoga suave y caminata consciente, reduce el estrés y mejora la concentración.',
+        img: mindful
+    },
+    {
+        name:'Círculo de Gratitud & Meditación',
+        text:'Duración: 45 min | Espacio de reflexión para fortalecer la empatía y la cohesión grupal.',
+        img: circulo
+    },
+    {
+        name:'Taller de Gestión del Estrés (Pranayama)',
+        text:'Duración: 1 hora | Técnicas de respiración para mayor claridad mental y bienestar emocional.',
+        img: taller
+    },
+    {
+        name:'Baño de Sonido con Cuencos Tibetanos',
+        text:'Duración: 1 hora | Sesión inmersiva para aliviar tensiones y promover la relajación profunda.',
+        img: bano
+    },
+    {
+        name:'Dinámica de Movimiento & Danza Libre',
+        text:'Duración: 1 hora | Expresión libre a través del movimiento para liberar bloqueos emocionales.',
+        img: dinamica
+    },
+    {
+        name:'Yoga Corporativo Regular Integral',
+        text:'Duración: 1 hora (semanal/mensual) | Clases adaptadas para reducir el estrés y mejorar la postura.',
+        img: corporativo
+    },
+    {
+        name:'Estiramientos Activos en Pausas Laborales',
+        text:'Duración: 15-20 min | Micro sesiones en video para aliviar tensiones y mejorar la movilidad.',
+        img: estiramientos
+    },
+    {
+        name:'Circuito de Bienestar Activo Empresarial',
+        text:'Duración: 2-3 horas | Día completo con estaciones de yoga, meditación, respiración y masajes Reiki.',
+        img: circuito
+    },
+]
+
+
+export const tarifas = [
+    {
+        name:'Paquete Básico',
+        bullets:[
+            '1 actividad mensual de 1.5 horas.',
+            'Introducción al bienestar en el trabajo.',
+            'Ideal para probar sus beneficios.'
+        ]
+    },
+    {
+        name:'Paquete Premium',
+        bullets:[
+            '3 actividades al mes de 1 hora.',
+            'Mayor impacto en el bienestar del equipo.',
+            'Reduce el estrés y mejora el clima laboral.'
+        ],
+        diferencial: true
+    },
+    {
+        name:'Paquete Corporativo',
+        bullets:[
+            'Sesiones regulares de yoga y meditación.',
+            'Incluye un evento anual de bienestar.',
+            'Potencia la salud y productividad del equipo.'
+        ]
+    },
+]
+

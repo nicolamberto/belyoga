@@ -68,7 +68,7 @@ const EmblaCarouselPropuestas = () => {
                                     <div className="embla-thumbs__container flex flex-col lg:flex-row justify-center gap-0 lg:gap-1 items-center pb-5 sm:pb-10">
                                         {yogaholisticasub.map((item, index) => (
                                             <motion.div
-                                            key={index}
+                                                key={index}
                                                 initial={{ y: -5, opacity: 0 }}
                                                 whileInView={{ y: 0, opacity: 1 }}
                                                 transition={{

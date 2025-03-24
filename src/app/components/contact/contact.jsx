@@ -35,7 +35,7 @@ export default function Contact() {
                     <div className="flex flex-row justify-center md:justify-start items-center gap-10 pt-5 lg:pt-10 xl:pt-20 text-[11px] lg:text-[13px] xl:text-[15px]">
 
                         <Link target='_blank' href={'https://maps.app.goo.gl/d44EyZ7tMzFrC5v2A'} className='px-6 py-2 rounded-full bg-[#033908] text-[#f5ebe0] hover:text-[#033908] hover:font-extrabold hover:bg-transparent border-[#79956c] hover:bg-opacity-60 transition'><button>Espacio Samadhi</button></Link>
-                        <Link target='_blank' href={'https://api.whatsapp.com/send?phone=5493518522977&text=Hola!%20Quiero%20averiguar%20mas%20sobre%20yoga!%20Mi%20nombre%20es:%20'} className='px-6 py-2 rounded-full bg-[#033908] text-[#f5ebe0] hover:text-[#033908] hover:font-extrabold hover:bg-transparent border-[#79956c] hover:bg-opacity-60 transition'><button> Contacta ya</button></Link>
+                        <Link target='_blank' href={'https://api.whatsapp.com/send?phone=5493518522977&text=Hola!%20Quiero%20averiguar%20mas%20sobre%20yoga!%20Mi%20nombre%20es:%20'} className='px-6 py-2 rounded-full bg-[#033908] text-[#f5ebe0] hover:text-[#033908] hover:font-extrabold hover:bg-transparent border-[#79956c] hover:bg-opacity-60 transition'><button> Contactá Ya</button></Link>
                     </div>
                 </div>
 

@@ -17,7 +17,7 @@ export default function ContainerIntroPropuestas({ name, img, text, link }) {
                     <p>{text}</p>
 
                     <div className="flex justify-end pr-10 items-center flex-row">
-                        <Link href={link} className='px-6 py-2 rounded-full bg-[#033908] text-[#f5ebe0] hover:text-[#033908] hover:font-extrabold hover:bg-transparent border-[#79956c] hover:bg-opacity-60 transition'>Leer mas</Link>
+                        <Link href={link} className='px-6 py-2 rounded-full bg-[#033908] text-[#f5ebe0] hover:text-[#033908] hover:font-extrabold hover:bg-transparent border-[#79956c] hover:bg-opacity-60 transition'>Leer más</Link>
                     </div>
 
                 </div>

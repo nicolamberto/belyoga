@@ -26,7 +26,7 @@ export default function Clases() {
 
       <div className='w-full'>
         <DividerAbout img={divisor2} text={'"Enseñar no es un arte mecánico, sino un arte del corazón."'} autor={' B.K.S. Iyengar'} py={'py-10'}/>
-        <DividerMobile img={divisormobile} text={'"Enseñar no es un arte mecánico, sino un arte del corazón."'} autor={' B.K.S. Iyengar'} py={'sm:py-10'}/>
+        <DividerMobile img={divisormobile} text={'"Enseñar no es un arte mecánico, sino un arte del corazón."'} autor={' B.K.S. Iyengar'} py={'py-10'}/>
       </div>
 
       <YogaNidra />

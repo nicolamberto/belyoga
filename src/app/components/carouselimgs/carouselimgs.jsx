@@ -25,7 +25,6 @@ export default function CarouselImgs() {
                     slidesPerView={5}
                     freeMode={true}
                     loop={true}
-                    allowTouchMove={false}
                     autoplay={{
                         delay: 0,
                         
@@ -64,7 +63,7 @@ export default function CarouselImgs() {
                                     <Image
                                         src={item.img}
                                         width={600}
-                                        className='object-cover overflow-hidden rounded-[50px] h-[300px] p-2'
+                                        className='object-cover overflow-hidden rounded-[50px] h-[300px] p-5 sm:p-2'
                                     />
                                 </div>
                             </SwiperSlide>

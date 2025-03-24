@@ -65,13 +65,15 @@ export default function Header() {
                 </div>
                 <div className='hidden md:flex flex-row justify-center items-center gap-3 lg:gap-6 text-[#f5ebe0]  text-[15px] lg:text-[20px]'>
                     {socialMediaHero.map((item, index) => (
-                        <motion.button
+                        <MotionLink
+                            target='_blank'
+                            href={'https://www.instagram.com/belsanchez.yoga?igsh=MTk2OGp4aW5udGhpYg=='}
                             initial={{ opacity: 0.9 }}
                             whileHover={{ scale: 1.1, opacity: 1 }}
                             whileTap={{ scale: 0.9 }}
                             key={index}>
                             {item.icon}
-                        </motion.button>
+                        </MotionLink>
                     ))}
                 </div>
 
@@ -103,33 +105,33 @@ export default function Header() {
 
                     {isMobileNavOpen && (
 
-                            <motion.div
-                                initial={{
-                                    opacity: 0,
-                                }}
-                                animate={{ opacity: 1 }}
-                                exit={{ opacity: 0, transition: { delay: 0.2 } }}
-                                className=" fixed inset-0 z-10 bg-[#033908]/80 backdrop-blur-md flex flex-col justify-center space-y-5 items-center"
-                            >
-                                {navbar.map((item, index) => (
-                                    <MotionLink
-                                        initial={{ y: -10, opacity: 0 }}
-                                        animate={{ y: 0, opacity: 1 }}
-                                        exit={{ y: -10, opacity: 0 }}
-                                        transition={{
-                                            duration: 0.3,
-                                            ease: "easeInOut",
-                                            delay: 0.05 * index,
-                                        }}
-                                        key={index}
-                                        href={item.link}
-                                        className='text-[#f5ebe0] font-semibold'
-                                        onClick={() => setIsMobileNavOpen(false)}
-                                    >
-                                        {item.title}
-                                    </MotionLink>
-                                ))}
-                            </motion.div>
+                        <motion.div
+                            initial={{
+                                opacity: 0,
+                            }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0, transition: { delay: 0.2 } }}
+                            className=" fixed inset-0 z-10 bg-[#033908]/80 backdrop-blur-md flex flex-col justify-center space-y-5 items-center"
+                        >
+                            {navbar.map((item, index) => (
+                                <MotionLink
+                                    initial={{ y: -10, opacity: 0 }}
+                                    animate={{ y: 0, opacity: 1 }}
+                                    exit={{ y: -10, opacity: 0 }}
+                                    transition={{
+                                        duration: 0.3,
+                                        ease: "easeInOut",
+                                        delay: 0.05 * index,
+                                    }}
+                                    key={index}
+                                    href={item.link}
+                                    className='text-[#f5ebe0] font-semibold'
+                                    onClick={() => setIsMobileNavOpen(false)}
+                                >
+                                    {item.title}
+                                </MotionLink>
+                            ))}
+                        </motion.div>
 
                     )}
 

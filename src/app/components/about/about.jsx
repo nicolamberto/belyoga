@@ -42,7 +42,7 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className={`text-[30px] lg:text-[40px] xl:text-[50px] text-[#033908] font-bold pb-5 ${tanpearl.className}`}>
-          Sobre MI
+          Sobre Mí
         </motion.p>
         <div className='flex flex-col-reverse sm:flex-row items-center sm:items-center gap-5 w-[100%] md:w-[90%] lg:w-[80%]'>
 
@@ -81,8 +81,8 @@ export default function About() {
 
       </div>
       <div className='w-full'>
-        <DividerAbout img={divisor1} text={'Encuentra tu paz con el Yoga'} text2={'Conectate con tu cuerpo y mente.'} py={'py-28'} />
-        <DividerMobile img={divisormobile} text={'"Enseñar no es un arte mecánico, sino un arte del corazón."'} autor={' B.K.S. Iyengar'} py={'py-10'} />
+        <DividerAbout img={divisor1} text={'Encuentra tu paz con el Yoga'} text2={'Conectate con tu cuerpo y mente.'} py={'py-28'} button={'CLASES'} />
+        <DividerMobile img={divisormobile} text={'"Enseñar no es un arte mecánico, sino un arte del corazón."'} autor={' B.K.S. Iyengar'} py={'py-10'} button={'CLASES'} />
       </div>
 
       <div className='flex flex-row-reverse justify-center items-start rounded-br-[120px] z-30 bg-opacity-25  w-[100%] xl:w-[60%] px-7 xl:px-0'>

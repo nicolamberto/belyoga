@@ -66,8 +66,8 @@ export default function Divider() {
                             viewport={{ once: true }}
                             className='flex flex-col justify-center items-center text-[#f5ebe0]'
                         >
-                            <p className='sm:text-[20px] lg:text-[25px] 2xl:text-[30px] font-bold'>+300</p>
-                            <p className=' text-[7px] 2xl:text-base '>Alumnos</p>
+                            <p className='sm:text-[20px] lg:text-[25px] 2xl:text-[30px] font-bold'>+20</p>
+                            <p className=' text-[7px] 2xl:text-base text-center'>Eventos realizados</p>
                         </motion.div>
                     </div>
 

@@ -20,8 +20,8 @@ export default function Clases() {
       <IntroPropuestas />
       <EmblaCarouselPropuestas />
       <div className='w-full'>
-        <DividerAbout img={divisor2} text={'Encuentra tu paz con el Yoga'} text2={'Conectate con tu cuerpo y mente.'} py={'py-10'} />
-        <DividerMobile img={divisormobile} text={'"Enseñar no es un arte mecánico, sino un arte del corazón."'} autor={' B.K.S. Iyengar'} py={'py-10'} />
+        <DividerAbout img={divisor2} text={'Encuentra tu paz con el Yoga'} text2={'Conectate con tu cuerpo y mente.'} py={'py-10'} button={'CLASES'} />
+        <DividerMobile img={divisormobile} text={'Encuentra tu paz con el Yoga'} text2={'Conectate con tu cuerpo y mente.'} py={'py-10'} button={'CLASES'} />
       </div>
       <EndSection/>
     </div>

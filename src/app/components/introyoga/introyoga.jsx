@@ -22,7 +22,7 @@ export default function IntroYoga() {
                 viewport={{ once: true }}
                 className="flex flex-col items-center justify-center pb-10 sm:pb-5 2xl:pb-0"
             >
-                <p className={`text-[25px] xl:text-[35px] text-[#033908] font-bold ${tanpearl.className}`}>¿Que es el YOGA?</p>
+                <p className={`text-[25px] xl:text-[35px] text-[#033908] font-bold ${tanpearl.className}`}>¿Qué es el Yoga?</p>
             </motion.div>
 
             <div className="flex justify-center items-center gap-5 w-[100%] lg:w-[80%] 2xl:w-[55%] px-7 xl:px-0">

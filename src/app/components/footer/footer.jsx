@@ -37,7 +37,7 @@ export default function Footer() {
 
             </div>
             <div className="text-[7px] sm:text-[10px] w-full text-center pt-5  z-20">
-                <p>diseñado por Martina Daniele. Desarrollado por Nicolas Lamberto.</p>
+                <p>Diseñado por Martina Daniele. Desarrollado por Nicolas Lamberto.</p>
                 <p>construido con React & Next.js (App Router & Server Actions), Tailwind CSS, Framer Motion, Resend, Vercel hosting.</p>
             </div>
         </div>
