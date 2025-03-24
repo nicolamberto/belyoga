@@ -27,7 +27,7 @@ export default function Contact() {
                     <div className="">
                         <p className='text-[#033908] text-[20px] lg:text-[25px] py-5 font-extrabold underline text-center lg:text-start'>Contacto</p>
                         <p className='text-[#033908] font-bold text-[11px] sm:text-[13px] lg:text-[15px] xl:text-[18px] '>Dirección: <span className='px-10 font-light text-[9px] sm:text-[11px] lg:text-[13px] xl:text-[15px]'>Calle Aconcagua 2520 Barrio Parque</span></p>
-                        <p className='text-[#033908] font-bold text-[11px] sm:text-[13px] lg:text-[15px] xl:text-[18px]'>Teléfono: <span className='px-10 font-light text-[9px] sm:text-[11px] lg:text-[13px] xl:text-[15px]'>123456789</span> </p>
+                        <p className='text-[#033908] font-bold text-[11px] sm:text-[13px] lg:text-[15px] xl:text-[18px]'>Teléfono: <span className='px-10 font-light text-[9px] sm:text-[11px] lg:text-[13px] xl:text-[15px]'>351-852-2977</span> </p>
                         <p className='text-[#033908] font-bold text-[11px] sm:text-[13px] lg:text-[15px] xl:text-[18px]'>Correo: <span className='px-10 font-light text-[9px] sm:text-[11px] lg:text-[13px] xl:text-[15px]'>belyoga@gmail.com</span></p>
                     </div>
 

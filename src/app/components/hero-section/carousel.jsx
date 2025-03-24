@@ -6,8 +6,7 @@ import useEmblaCarousel from 'embla-carousel-react'
 import Image from 'next/image'
 import Autoplay from 'embla-carousel-autoplay'
 
-import { carouselHeroSectionDesktop, carouselHeroSectionMobile } from '@/app/lib/data/data'
-import { socialMediaHero } from '@/app/lib/data/data';
+import { carouselHeroSectionDesktop } from '@/app/lib/data/data'
 import Link from 'next/link'
 import { tanpearl } from '@/app/layout'
 

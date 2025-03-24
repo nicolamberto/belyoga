@@ -60,7 +60,7 @@ const EmblaCarouselIntroClases = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     className="flex flex-col items-center justify-center pb-5 xl:pb-10">
-                    <p className={`text-[25px] xl:text-[35px] pb-0 text-[#033908] font-bold ${tanpearl.className}`}>Nuestras CLASES</p>
+                    <p className={`text-[25px] xl:text-[35px] pb-0 text-[#033908] font-bold ${tanpearl.className}`}>Nuestras Clases</p>
                 </motion.div>
 
                 <div className="embla__viewport " ref={emblaMainRef}>

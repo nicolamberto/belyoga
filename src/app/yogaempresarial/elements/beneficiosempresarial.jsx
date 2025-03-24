@@ -11,7 +11,7 @@ export default function BeneficiosEmpresarial() {
       <div className='flex flex-col md:flex-row justify-center items-center gap-32 md:gap-10 w-[100%] py-20'>
 
         {beneficiosempresarial.map((item, index) => (
-          <div className="bg-white bg-opacity-40 shadow-xl border-[#033908] border-opacity-40 rounded-[50px] pb-10 pt-5 px-5 text-center w-[70%] relative md:w-[25%] xl:w-[20%] flex flex-col gap-5 xl:gap-10 text-[13px] lg:text-[15px] xl:text-[17px] text-[#033908]">
+          <div key={index} className="bg-white bg-opacity-40 shadow-xl border-[#033908] border-opacity-40 rounded-[50px] pb-10 pt-5 px-5 text-center w-[70%] relative md:w-[25%] xl:w-[20%] flex flex-col gap-5 xl:gap-10 text-[13px] lg:text-[15px] xl:text-[17px] text-[#033908]">
             <p className=' font-bold w-full'>{item.title}</p>
             <p className=' text-opacity-80 text-justify font-[1px] text-[9px] lg:text-[11px] xl:text-[13px]'>{item.text}</p>
             <div className="absolute -top-12 left-1/2 transform -translate-x-1/2 -translate-y-1/2">

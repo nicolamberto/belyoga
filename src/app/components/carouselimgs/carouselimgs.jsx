@@ -57,13 +57,14 @@ export default function CarouselImgs() {
                     className=' w-[100%]'
                 >
                     <div>
-                        {carouselImgs.map((item) => (
-                            <SwiperSlide key={item.alt} className=''>
+                        {carouselImgs.map((item, index) => (
+                            <SwiperSlide key={index} className=''>
                                 <div className="rounded-xl object-cover flex justify-center items-center">
                                     <Image
                                         src={item.img}
                                         width={600}
                                         className='object-cover overflow-hidden rounded-[50px] h-[300px] p-5 sm:p-2'
+                                        alt='carousel-img'
                                     />
                                 </div>
                             </SwiperSlide>

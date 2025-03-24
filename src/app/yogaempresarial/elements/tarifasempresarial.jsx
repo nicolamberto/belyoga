@@ -30,7 +30,7 @@ export default function TarifasEmpresarial() {
                 ))}
               </div>
 
-              <Link target='_blank' href={'https://api.whatsapp.com/send?phone=5493518522977&text=Hola!%20Quiero%20averiguar%20mas%20sobre%20yoga%20empresarial!%20Mi%20nombre%20es:%20'} className={`border border-[#033908] text-[#033908] font-bold rounded-full px-10 py-1 text-[13px] lg:text-[13px] 2xl:text-[16px] ${item.diferencial ? 'bg-[#033908] text-[#f5ebe0] hover:bg-[#f5ebe0] hover:text-[#033908] transition' : 'bg-[#033908] text-[#f5ebe0] hover:bg-[#f5ebe0] hover:text-[#033908] transition'} `}>Contratar</Link>
+              <Link target='_blank' href={'https://api.whatsapp.com/send?phone=5493518522977&text=Hola!%20Quiero%20averiguar%20mas%20sobre%20yoga%20empresarial!%20Mi%20nombre%20es:%20'} className={`border border-[#033908] text-[#033908] font-bold rounded-full px-10 py-1 text-[13px] lg:text-[13px] 2xl:text-[16cdpx] ${item.diferencial ? 'bg-[#033908] text-[#f5ebe0] hover:bg-[#f5ebe0] hover:text-[#033908] transition' : 'bg-[#033908] text-[#f5ebe0] hover:bg-[#f5ebe0] hover:text-[#033908] transition'} `}>Contratar</Link>
             </div>
 
           ))

@@ -22,6 +22,7 @@ export default function ActividadesEmpresarial() {
       >
         {actividadesEmpresarial.map((item, index) => (
           <motion.div
+            key={index}
             onMouseEnter={() => setHoverIndex(index)}
             onMouseLeave={() => setHoverIndex(null)}
             className="relative group transition flex flex-col justify-center items-center w-[90%] xl:w-[100%] shadow-sm my-7 p-4 rounded-[20px] border border-[#033908] text-[#033908] h-[140px] py-20">
